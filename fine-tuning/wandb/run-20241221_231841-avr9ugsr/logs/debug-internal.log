@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:18:41.837481068+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:18:41.837507658+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_231841-avr9ugsr/logs/debug-core.log"}
+{"time":"2024-12-21T23:18:42.261074992+08:00","level":"INFO","msg":"created new stream","id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:42.261140113+08:00","level":"INFO","msg":"stream: started","id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:42.261197083+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:42.261221234+08:00","level":"INFO","msg":"handler: started","stream_id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:42.261272034+08:00","level":"INFO","msg":"sender: started","stream_id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:43.225123726+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:18:56.065849905+08:00","level":"INFO","msg":"stream: closing","id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:56.065928256+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:18:56.067011628+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:18:57.39415294+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:18:58.038986334+08:00","level":"INFO","msg":"handler: closed","stream_id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:58.039055274+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:58.039093875+08:00","level":"INFO","msg":"sender: closed","stream_id":"avr9ugsr"}
+{"time":"2024-12-21T23:18:58.039210656+08:00","level":"INFO","msg":"stream: closed","id":"avr9ugsr"}

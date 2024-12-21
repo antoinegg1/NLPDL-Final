@@ -1,17 +1,17 @@
 # main.py
 '''
 torchrun --nproc_per_node=8 main.py \
-    --train_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/val \
-    --val_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/train \
+    --train_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/train \
+    --val_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/val \
     --output_dir /mnt/file2/changye/model/gpt2-formal-finetuned \
     --logging_dir ./logs \
     --num_epochs 3 \
-    --train_batch_size 8 \
-    --eval_batch_size 8 \
+    --train_batch_size 2 \
+    --eval_batch_size 2 \
     --logging_steps 100 \
     --max_length 512 \
     --dataloader_num_workers 60 \
-    --gradient_accumulation_steps 4 \
+    --gradient_accumulation_steps 1 \
     --wandb_project academic_finetuning \
 '''
 import argparse

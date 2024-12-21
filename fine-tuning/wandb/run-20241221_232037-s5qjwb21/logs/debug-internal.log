@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:20:37.583742447+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:20:37.583774257+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_232037-s5qjwb21/logs/debug-core.log"}
+{"time":"2024-12-21T23:20:38.110109133+08:00","level":"INFO","msg":"created new stream","id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:38.110163224+08:00","level":"INFO","msg":"stream: started","id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:38.110258074+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:38.110283525+08:00","level":"INFO","msg":"sender: started","stream_id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:38.110370516+08:00","level":"INFO","msg":"handler: started","stream_id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:39.087263201+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:20:51.062055164+08:00","level":"INFO","msg":"stream: closing","id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:51.062105375+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:20:51.063039803+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:20:52.025578915+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:20:53.062673194+08:00","level":"INFO","msg":"handler: closed","stream_id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:53.062745995+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:53.062753405+08:00","level":"INFO","msg":"sender: closed","stream_id":"s5qjwb21"}
+{"time":"2024-12-21T23:20:53.062950557+08:00","level":"INFO","msg":"stream: closed","id":"s5qjwb21"}

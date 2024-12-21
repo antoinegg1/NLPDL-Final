@@ -1,0 +1,34 @@
+使用设备: cuda
+训练集加载完成，共有 4000 个样本。
+验证集加载完成，共有 32000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+数据预处理完成。
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 103, in main
+    model.resize_token_embeddings(len(tokenizer))  # 调整词汇表大小
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2117, in resize_token_embeddings
+    model_embeds = self._resize_token_embeddings(new_num_tokens, pad_to_multiple_of, mean_resizing)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2142, in _resize_token_embeddings
+    new_embeddings = self._get_resized_embeddings(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2296, in _get_resized_embeddings
+    self._init_added_embeddings_weights_with_mean(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2469, in _init_added_embeddings_weights_with_mean
+    mean_embeddings = torch.mean(old_embeddings_weight, axis=0)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 103, in main
+    model.resize_token_embeddings(len(tokenizer))  # 调整词汇表大小
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2117, in resize_token_embeddings
+    model_embeds = self._resize_token_embeddings(new_num_tokens, pad_to_multiple_of, mean_resizing)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2142, in _resize_token_embeddings
+    new_embeddings = self._get_resized_embeddings(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2296, in _get_resized_embeddings
+    self._init_added_embeddings_weights_with_mean(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2469, in _init_added_embeddings_weights_with_mean
+    mean_embeddings = torch.mean(old_embeddings_weight, axis=0)
+KeyboardInterrupt

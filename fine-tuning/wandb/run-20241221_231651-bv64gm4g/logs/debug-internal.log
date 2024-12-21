@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:16:51.963764806+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:16:51.963789377+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_231651-bv64gm4g/logs/debug-core.log"}
+{"time":"2024-12-21T23:16:52.286628592+08:00","level":"INFO","msg":"created new stream","id":"bv64gm4g"}
+{"time":"2024-12-21T23:16:52.286686562+08:00","level":"INFO","msg":"stream: started","id":"bv64gm4g"}
+{"time":"2024-12-21T23:16:52.286781624+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"bv64gm4g"}
+{"time":"2024-12-21T23:16:52.286854235+08:00","level":"INFO","msg":"handler: started","stream_id":"bv64gm4g"}
+{"time":"2024-12-21T23:16:52.286900235+08:00","level":"INFO","msg":"sender: started","stream_id":"bv64gm4g"}
+{"time":"2024-12-21T23:16:52.942930496+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:17:20.111269445+08:00","level":"INFO","msg":"stream: closing","id":"bv64gm4g"}
+{"time":"2024-12-21T23:17:20.111349616+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:17:20.112007244+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:17:21.176950223+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:17:22.18695665+08:00","level":"INFO","msg":"handler: closed","stream_id":"bv64gm4g"}
+{"time":"2024-12-21T23:17:22.187033731+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"bv64gm4g"}
+{"time":"2024-12-21T23:17:22.187046061+08:00","level":"INFO","msg":"sender: closed","stream_id":"bv64gm4g"}
+{"time":"2024-12-21T23:17:22.187168643+08:00","level":"INFO","msg":"stream: closed","id":"bv64gm4g"}

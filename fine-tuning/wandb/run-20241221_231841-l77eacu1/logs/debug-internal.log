@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:18:41.852718104+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:18:41.852744374+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_231841-l77eacu1/logs/debug-core.log"}
+{"time":"2024-12-21T23:18:42.276767893+08:00","level":"INFO","msg":"created new stream","id":"l77eacu1"}
+{"time":"2024-12-21T23:18:42.276817244+08:00","level":"INFO","msg":"stream: started","id":"l77eacu1"}
+{"time":"2024-12-21T23:18:42.276867614+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"l77eacu1"}
+{"time":"2024-12-21T23:18:42.276921765+08:00","level":"INFO","msg":"handler: started","stream_id":"l77eacu1"}
+{"time":"2024-12-21T23:18:42.276954735+08:00","level":"INFO","msg":"sender: started","stream_id":"l77eacu1"}
+{"time":"2024-12-21T23:18:43.286013607+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:18:56.049658493+08:00","level":"INFO","msg":"stream: closing","id":"l77eacu1"}
+{"time":"2024-12-21T23:18:56.049748724+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:18:56.050866666+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:18:57.140255423+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:18:58.155637125+08:00","level":"INFO","msg":"handler: closed","stream_id":"l77eacu1"}
+{"time":"2024-12-21T23:18:58.155697396+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"l77eacu1"}
+{"time":"2024-12-21T23:18:58.155751386+08:00","level":"INFO","msg":"sender: closed","stream_id":"l77eacu1"}
+{"time":"2024-12-21T23:18:58.155861958+08:00","level":"INFO","msg":"stream: closed","id":"l77eacu1"}

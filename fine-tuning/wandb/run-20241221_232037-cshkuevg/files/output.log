@@ -1,0 +1,48 @@
+使用设备: cuda
+训练集加载完成，共有 32000 个样本。
+验证集加载完成，共有 4000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+数据预处理完成。
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 104, in main
+    model.to(device)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3164, in to
+    return super().to(*args, **kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 0 has a total capacity of 23.60 GiB of which 7.81 MiB is free. Process 3838580 has 3.40 GiB memory in use. Process 3838583 has 3.31 GiB memory in use. Process 3838586 has 3.31 GiB memory in use. Process 3838582 has 2.00 GiB memory in use. Process 3838585 has 3.31 GiB memory in use. Process 3838587 has 2.66 GiB memory in use. Process 3838584 has 2.87 GiB memory in use. Including non-PyTorch memory, this process has 2.66 GiB memory in use. Of the allocated memory 2.35 GiB is allocated by PyTorch, and 55.21 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 104, in main
+    model.to(device)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 3164, in to
+    return super().to(*args, **kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1340, in to
+    return self._apply(convert)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 900, in _apply
+    module._apply(fn)
+  [Previous line repeated 2 more times]
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 927, in _apply
+    param_applied = fn(param)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1326, in convert
+    return t.to(
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 26.00 MiB. GPU 0 has a total capacity of 23.60 GiB of which 7.81 MiB is free. Process 3838580 has 3.40 GiB memory in use. Process 3838583 has 3.31 GiB memory in use. Process 3838586 has 3.31 GiB memory in use. Process 3838582 has 2.00 GiB memory in use. Process 3838585 has 3.31 GiB memory in use. Process 3838587 has 2.66 GiB memory in use. Process 3838584 has 2.87 GiB memory in use. Including non-PyTorch memory, this process has 2.66 GiB memory in use. Of the allocated memory 2.35 GiB is allocated by PyTorch, and 55.21 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

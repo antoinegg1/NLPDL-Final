@@ -1,0 +1,8 @@
+{"time":"2024-12-21T23:22:20.489380486+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:22:20.489406277+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_232220-6g6765kw/logs/debug-core.log"}
+{"time":"2024-12-21T23:22:20.812722694+08:00","level":"INFO","msg":"created new stream","id":"6g6765kw"}
+{"time":"2024-12-21T23:22:20.812778644+08:00","level":"INFO","msg":"stream: started","id":"6g6765kw"}
+{"time":"2024-12-21T23:22:20.812859425+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"6g6765kw"}
+{"time":"2024-12-21T23:22:20.812895385+08:00","level":"INFO","msg":"sender: started","stream_id":"6g6765kw"}
+{"time":"2024-12-21T23:22:20.812954865+08:00","level":"INFO","msg":"handler: started","stream_id":"6g6765kw"}
+{"time":"2024-12-21T23:22:21.887654173+08:00","level":"INFO","msg":"Starting system monitor"}

@@ -20,3 +20,4 @@ config: {'train_file': '/mnt/file2/changye/dataset/casual_formal_pair_ACL40k/val
 2024-12-21 23:06:24,062 INFO    MainThread:3637888 [wandb_run.py:_redirect():2358] Wrapping output streams.
 2024-12-21 23:06:24,062 INFO    MainThread:3637888 [wandb_run.py:_redirect():2383] Redirects installed.
 2024-12-21 23:06:24,065 INFO    MainThread:3637888 [wandb_init.py:init():925] run started, returning control to user process
+2024-12-21 23:08:02,240 WARNING MsgRouterThr:3637888 [router.py:message_loop():75] message_loop has been closed

@@ -1,0 +1,46 @@
+2024-12-21 23:21:09,956 INFO    MainThread:3841461 [wandb_setup.py:_flush():68] Current SDK version is 0.19.0
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_setup.py:_flush():68] Configure stats pid to 3841461
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_setup.py:_flush():68] Loading settings from /home/changye/.config/wandb/settings
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_setup.py:_flush():68] Loading settings from /mnt/file2/changye/NLPFINAL/fine-tuning/wandb/settings
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_init.py:_log_setup():528] Logging user logs to /mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_232109-epeupigs/logs/debug.log
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_init.py:_log_setup():529] Logging internal logs to /mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_232109-epeupigs/logs/debug-internal.log
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_init.py:init():639] calling init triggers
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_init.py:init():645] wandb.init called with sweep_config: {}
+config: {'train_file': '/mnt/file2/changye/dataset/casual_formal_pair_ACL40k/train', 'val_file': '/mnt/file2/changye/dataset/casual_formal_pair_ACL40k/val', 'output_dir': '/mnt/file2/changye/model/gpt2-formal-finetuned', 'logging_dir': './logs', 'num_epochs': 3, 'train_batch_size': 2, 'eval_batch_size': 2, 'logging_steps': 100, 'max_length': 512, 'dataloader_num_workers': 60, 'gradient_accumulation_steps': 1, 'wandb_project': 'academic_finetuning', 'wandb_entity': None}
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_init.py:init():688] starting backend
+2024-12-21 23:21:09,957 INFO    MainThread:3841461 [wandb_init.py:init():692] sending inform_init request
+2024-12-21 23:21:09,964 INFO    MainThread:3841461 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-12-21 23:21:09,965 INFO    MainThread:3841461 [wandb_init.py:init():705] backend started and connected
+2024-12-21 23:21:09,967 INFO    MainThread:3841461 [wandb_init.py:init():798] updated telemetry
+2024-12-21 23:21:09,972 WARNING MainThread:3841461 [wandb_init.py:init():1309] interrupted
+Traceback (most recent call last):
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1305, in init
+    return wi.init()
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 813, in init
+    run._populate_git_info()
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/wandb/sdk/wandb_run.py", line 877, in _populate_git_info
+    self._remote_url, self._commit = repo.remote_url, repo.last_commit
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/wandb/sdk/lib/gitlib.py", line 119, in last_commit
+    if not self.repo.head or not self.repo.head.is_valid():
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/refs/symbolic.py", line 514, in is_valid
+    self.object  # noqa: B018
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/refs/symbolic.py", line 288, in _get_object
+    return Object.new_from_sha(self.repo, hex_to_bin(self.dereference_recursive(self.repo, self.path)))
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/objects/base.py", line 149, in new_from_sha
+    oinfo = repo.odb.info(sha1)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/db.py", line 41, in info
+    hexsha, typename, size = self._git.get_object_header(bin_to_hex(binsha))
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/cmd.py", line 1677, in get_object_header
+    cmd = self._get_persistent_cmd("cat_file_header", "cat_file", batch_check=True)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/cmd.py", line 1653, in _get_persistent_cmd
+    cmd = self._call_process(cmd_name, *args, **options)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/cmd.py", line 1598, in _call_process
+    return self.execute(call, **exec_kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/git/cmd.py", line 1262, in execute
+    proc = safer_popen(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/subprocess.py", line 1809, in _execute_child
+    os.close(errpipe_write)
+KeyboardInterrupt

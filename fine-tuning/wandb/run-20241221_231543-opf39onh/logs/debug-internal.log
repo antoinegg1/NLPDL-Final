@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:15:43.08675328+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:15:43.08678415+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_231543-opf39onh/logs/debug-core.log"}
+{"time":"2024-12-21T23:15:43.514571918+08:00","level":"INFO","msg":"created new stream","id":"opf39onh"}
+{"time":"2024-12-21T23:15:43.514636059+08:00","level":"INFO","msg":"stream: started","id":"opf39onh"}
+{"time":"2024-12-21T23:15:43.51471831+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"opf39onh"}
+{"time":"2024-12-21T23:15:43.514740511+08:00","level":"INFO","msg":"handler: started","stream_id":"opf39onh"}
+{"time":"2024-12-21T23:15:43.514791431+08:00","level":"INFO","msg":"sender: started","stream_id":"opf39onh"}
+{"time":"2024-12-21T23:15:44.457503233+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:15:57.225554338+08:00","level":"INFO","msg":"stream: closing","id":"opf39onh"}
+{"time":"2024-12-21T23:15:57.225631749+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:15:57.226482321+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:15:58.57496368+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:15:59.577976392+08:00","level":"INFO","msg":"handler: closed","stream_id":"opf39onh"}
+{"time":"2024-12-21T23:15:59.578026502+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"opf39onh"}
+{"time":"2024-12-21T23:15:59.578102693+08:00","level":"INFO","msg":"sender: closed","stream_id":"opf39onh"}
+{"time":"2024-12-21T23:15:59.578187804+08:00","level":"INFO","msg":"stream: closed","id":"opf39onh"}

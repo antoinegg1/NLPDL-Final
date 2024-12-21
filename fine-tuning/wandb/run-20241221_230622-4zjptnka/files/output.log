@@ -1,3 +1,95 @@
 使用设备: cuda
 训练集加载完成，共有 4000 个样本。
 验证集加载完成，共有 32000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+Map:   0%|                                                                                                   | 0/4000 [00:00<?, ? examples/s]/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/tokenization_utils_base.py:3953: UserWarning: `as_target_tokenizer` is deprecated and will be removed in v5 of Transformers. You can tokenize your labels by using the argument `text_target` of the regular `__call__` method (either in the same call as your input texts if you use the same keyword arguments, or in a separate call.
+  warnings.warn(
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████| 4000/4000 [00:09<00:00, 421.60 examples/s]
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████| 32000/32000 [01:08<00:00, 468.31 examples/s]
+数据预处理完成。
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+模型加载并调整词汇表完成。
+/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/mnt/file2/changye/NLPFINAL/fine-tuning/trainer.py:67: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+[rank2]:     main(args)
+[rank2]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 128, in main
+[rank2]:     trainer.train()
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2164, in train
+[rank2]:     return inner_training_loop(
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2522, in _inner_training_loop
+[rank2]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 3655, in training_step
+[rank2]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 3709, in compute_loss
+[rank2]:     outputs = model(**inputs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+[rank2]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+[rank2]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/accelerate/utils/operations.py", line 823, in forward
+[rank2]:     return model_forward(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/accelerate/utils/operations.py", line 811, in __call__
+[rank2]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1294, in forward
+[rank2]:     lm_logits = self.lm_head(hidden_states)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank2]:     return F.linear(input, self.weight, self.bias)
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 394.00 MiB. GPU 2 has a total capacity of 23.60 GiB of which 131.38 MiB is free. Including non-PyTorch memory, this process has 23.44 GiB memory in use. Of the allocated memory 22.78 GiB is allocated by PyTorch, and 246.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)
+[rank2]: Traceback (most recent call last):
+[rank2]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+[rank2]:     main(args)
+[rank2]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 128, in main
+[rank2]:     trainer.train()
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2164, in train
+[rank2]:     return inner_training_loop(
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2522, in _inner_training_loop
+[rank2]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 3655, in training_step
+[rank2]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 3709, in compute_loss
+[rank2]:     outputs = model(**inputs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1643, in forward
+[rank2]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1459, in _run_ddp_forward
+[rank2]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/accelerate/utils/operations.py", line 823, in forward
+[rank2]:     return model_forward(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/accelerate/utils/operations.py", line 811, in __call__
+[rank2]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+[rank2]:     return func(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1294, in forward
+[rank2]:     lm_logits = self.lm_head(hidden_states)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1736, in _wrapped_call_impl
+[rank2]:     return self._call_impl(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1747, in _call_impl
+[rank2]:     return forward_call(*args, **kwargs)
+[rank2]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/linear.py", line 125, in forward
+[rank2]:     return F.linear(input, self.weight, self.bias)
+[rank2]: torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 394.00 MiB. GPU 2 has a total capacity of 23.60 GiB of which 131.38 MiB is free. Including non-PyTorch memory, this process has 23.44 GiB memory in use. Of the allocated memory 22.78 GiB is allocated by PyTorch, and 246.74 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://pytorch.org/docs/stable/notes/cuda.html#environment-variables)

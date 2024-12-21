@@ -1,0 +1,45 @@
+使用设备: cuda
+训练集加载完成，共有 4000 个样本。
+验证集加载完成，共有 32000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+数据预处理完成。
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 102, in main
+    model = GPT2LMHeadModel.from_pretrained('/mnt/file2/changye/model/fine_tuned_gpt2')
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4130, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1194, in __init__
+    self.transformer = GPT2Model(config)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 904, in __init__
+    self.h = nn.ModuleList([GPT2Block(config, layer_idx=i) for i in range(config.num_hidden_layers)])
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 904, in <listcomp>
+    self.h = nn.ModuleList([GPT2Block(config, layer_idx=i) for i in range(config.num_hidden_layers)])
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 593, in __init__
+    self.attn = attention_class(config=config, layer_idx=layer_idx)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 466, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 130, in __init__
+    torch.tril(torch.ones((max_positions, max_positions), dtype=torch.bool)).view(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 102, in main
+    model = GPT2LMHeadModel.from_pretrained('/mnt/file2/changye/model/fine_tuned_gpt2')
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4130, in from_pretrained
+    model = cls(config, *model_args, **model_kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 1194, in __init__
+    self.transformer = GPT2Model(config)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 904, in __init__
+    self.h = nn.ModuleList([GPT2Block(config, layer_idx=i) for i in range(config.num_hidden_layers)])
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 904, in <listcomp>
+    self.h = nn.ModuleList([GPT2Block(config, layer_idx=i) for i in range(config.num_hidden_layers)])
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 593, in __init__
+    self.attn = attention_class(config=config, layer_idx=layer_idx)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 466, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/gpt2/modeling_gpt2.py", line 130, in __init__
+    torch.tril(torch.ones((max_positions, max_positions), dtype=torch.bool)).view(
+KeyboardInterrupt

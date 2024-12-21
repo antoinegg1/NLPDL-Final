@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:12:07.032656281+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:12:07.032694452+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_231207-js21aj0y/logs/debug-core.log"}
+{"time":"2024-12-21T23:12:07.356906583+08:00","level":"INFO","msg":"created new stream","id":"js21aj0y"}
+{"time":"2024-12-21T23:12:07.356967784+08:00","level":"INFO","msg":"stream: started","id":"js21aj0y"}
+{"time":"2024-12-21T23:12:07.357009235+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"js21aj0y"}
+{"time":"2024-12-21T23:12:07.357091367+08:00","level":"INFO","msg":"handler: started","stream_id":"js21aj0y"}
+{"time":"2024-12-21T23:12:07.357118007+08:00","level":"INFO","msg":"sender: started","stream_id":"js21aj0y"}
+{"time":"2024-12-21T23:12:08.355061966+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:12:36.131815144+08:00","level":"INFO","msg":"stream: closing","id":"js21aj0y"}
+{"time":"2024-12-21T23:12:36.131889305+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:12:36.132837344+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:12:37.835195194+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:12:38.49353198+08:00","level":"INFO","msg":"handler: closed","stream_id":"js21aj0y"}
+{"time":"2024-12-21T23:12:38.493598782+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"js21aj0y"}
+{"time":"2024-12-21T23:12:38.493619512+08:00","level":"INFO","msg":"sender: closed","stream_id":"js21aj0y"}
+{"time":"2024-12-21T23:12:38.493738534+08:00","level":"INFO","msg":"stream: closed","id":"js21aj0y"}

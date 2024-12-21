@@ -1,0 +1,6 @@
+使用设备: cuda
+训练集加载完成，共有 4000 个样本。
+验证集加载完成，共有 32000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+Parameter 'function'=<function prepare_dataset.<locals>.<lambda> at 0x7f1df1fe9120> of the transform datasets.arrow_dataset.Dataset._map_single couldn't be hashed properly, a random hash was used instead. Make sure your transforms and parameters are serializable with pickle or dill for the dataset fingerprinting and caching to work. If you reuse this transform, the caching mechanism will consider it to be different from the previous calls and recompute everything. This warning is only showed once. Subsequent hashing failures won't be showed.
+Map:   0%|                                                                                                  | 0/32000 [00:00<?, ? examples/s]

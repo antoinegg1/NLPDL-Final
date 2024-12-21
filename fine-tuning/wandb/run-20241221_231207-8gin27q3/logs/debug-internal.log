@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:12:07.239411467+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:12:07.239437168+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_231207-8gin27q3/logs/debug-core.log"}
+{"time":"2024-12-21T23:12:07.563501116+08:00","level":"INFO","msg":"created new stream","id":"8gin27q3"}
+{"time":"2024-12-21T23:12:07.563548177+08:00","level":"INFO","msg":"stream: started","id":"8gin27q3"}
+{"time":"2024-12-21T23:12:07.563600458+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"8gin27q3"}
+{"time":"2024-12-21T23:12:07.563615838+08:00","level":"INFO","msg":"sender: started","stream_id":"8gin27q3"}
+{"time":"2024-12-21T23:12:07.56371189+08:00","level":"INFO","msg":"handler: started","stream_id":"8gin27q3"}
+{"time":"2024-12-21T23:12:08.530318604+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:12:36.370098698+08:00","level":"INFO","msg":"stream: closing","id":"8gin27q3"}
+{"time":"2024-12-21T23:12:36.37018409+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:12:36.372125187+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:12:37.473536043+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:12:38.150336703+08:00","level":"INFO","msg":"handler: closed","stream_id":"8gin27q3"}
+{"time":"2024-12-21T23:12:38.150402774+08:00","level":"INFO","msg":"sender: closed","stream_id":"8gin27q3"}
+{"time":"2024-12-21T23:12:38.150392744+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"8gin27q3"}
+{"time":"2024-12-21T23:12:38.150535736+08:00","level":"INFO","msg":"stream: closed","id":"8gin27q3"}

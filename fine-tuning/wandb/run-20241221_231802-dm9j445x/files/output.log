@@ -1,0 +1,45 @@
+使用设备: cuda
+训练集加载完成，共有 4000 个样本。
+验证集加载完成，共有 32000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+数据预处理完成。
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 103, in main
+    model.resize_token_embeddings(len(tokenizer))  # 调整词汇表大小
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2117, in resize_token_embeddings
+    model_embeds = self._resize_token_embeddings(new_num_tokens, pad_to_multiple_of, mean_resizing)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2142, in _resize_token_embeddings
+    new_embeddings = self._get_resized_embeddings(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2266, in _get_resized_embeddings
+    new_embeddings = nn.Embedding(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 170, in __init__
+    self.reset_parameters()
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 181, in reset_parameters
+    init.normal_(self.weight)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/init.py", line 193, in normal_
+    return _no_grad_normal_(tensor, mean, std, generator)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/init.py", line 22, in _no_grad_normal_
+    return tensor.normal_(mean, std, generator=generator)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 103, in main
+    model.resize_token_embeddings(len(tokenizer))  # 调整词汇表大小
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2117, in resize_token_embeddings
+    model_embeds = self._resize_token_embeddings(new_num_tokens, pad_to_multiple_of, mean_resizing)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2142, in _resize_token_embeddings
+    new_embeddings = self._get_resized_embeddings(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 2266, in _get_resized_embeddings
+    new_embeddings = nn.Embedding(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 170, in __init__
+    self.reset_parameters()
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/modules/sparse.py", line 181, in reset_parameters
+    init.normal_(self.weight)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/init.py", line 193, in normal_
+    return _no_grad_normal_(tensor, mean, std, generator)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/torch/nn/init.py", line 22, in _no_grad_normal_
+    return tensor.normal_(mean, std, generator=generator)
+KeyboardInterrupt

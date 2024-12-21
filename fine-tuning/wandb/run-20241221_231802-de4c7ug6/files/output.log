@@ -1,0 +1,47 @@
+使用设备: cuda
+训练集加载完成，共有 4000 个样本。
+验证集加载完成，共有 32000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+数据预处理完成。
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 102, in main
+    model = GPT2LMHeadModel.from_pretrained('/mnt/file2/changye/model/fine_tuned_gpt2')
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4264, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4712, in _load_pretrained_model
+    error_msgs = _load_state_dict_into_model(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 724, in _load_state_dict_into_model
+    load(model_to_load, state_dict, prefix=start_prefix, assign_to_params_buffers=assign_to_params_buffers)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 722, in load
+    load(child, state_dict, prefix + name + ".", assign_to_params_buffers)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 722, in load
+    load(child, state_dict, prefix + name + ".", assign_to_params_buffers)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 722, in load
+    load(child, state_dict, prefix + name + ".", assign_to_params_buffers)
+  [Previous line repeated 1 more time]
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 718, in load
+    module._load_from_state_dict(*args)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 175, in <module>
+    main(args)
+  File "/mnt/file2/changye/NLPFINAL/fine-tuning/main.py", line 102, in main
+    model = GPT2LMHeadModel.from_pretrained('/mnt/file2/changye/model/fine_tuned_gpt2')
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4264, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4712, in _load_pretrained_model
+    error_msgs = _load_state_dict_into_model(
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 724, in _load_state_dict_into_model
+    load(model_to_load, state_dict, prefix=start_prefix, assign_to_params_buffers=assign_to_params_buffers)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 722, in load
+    load(child, state_dict, prefix + name + ".", assign_to_params_buffers)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 722, in load
+    load(child, state_dict, prefix + name + ".", assign_to_params_buffers)
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 722, in load
+    load(child, state_dict, prefix + name + ".", assign_to_params_buffers)
+  [Previous line repeated 1 more time]
+  File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 718, in load
+    module._load_from_state_dict(*args)
+KeyboardInterrupt

@@ -1,0 +1,13 @@
+使用设备: cuda
+训练集加载完成，共有 32000 个样本。
+验证集加载完成，共有 4000 个样本。
+添加了填充标记 '[PAD]' 到分词器。
+数据预处理完成。
+The new embeddings will be initialized from a multivariate normal distribution that has old embeddings' mean and covariance. As described in this article: https://nlp.stanford.edu/~johnhew/vocab-expansion.html. To disable this, use `mean_resizing=False`
+模型加载并调整词汇表完成。
+/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/mnt/file2/changye/NLPFINAL/fine-tuning/trainer.py:67: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+[34m[1mwandb[0m: [33mWARNING[0m The `run_name` is currently set to the same value as `TrainingArguments.output_dir`. If this was not intended, please specify a different run name by setting the `TrainingArguments.run_name` parameter.
+  0%|▏                                                                                                   | 10/6000 [00:40<6:07:06,  3.68s/it]
