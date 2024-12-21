@@ -1,0 +1,18 @@
+{"time":"2024-12-21T11:12:24.735298902+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T11:12:24.735325992+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/wandb/run-20241221_111224-cyagrsha/logs/debug-core.log"}
+{"time":"2024-12-21T11:12:24.956453635+08:00","level":"INFO","msg":"created new stream","id":"cyagrsha"}
+{"time":"2024-12-21T11:12:24.956493475+08:00","level":"INFO","msg":"stream: started","id":"cyagrsha"}
+{"time":"2024-12-21T11:12:24.956572925+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"cyagrsha"}
+{"time":"2024-12-21T11:12:24.958283877+08:00","level":"INFO","msg":"handler: started","stream_id":"cyagrsha"}
+{"time":"2024-12-21T11:12:24.956680975+08:00","level":"INFO","msg":"sender: started","stream_id":"cyagrsha"}
+{"time":"2024-12-21T11:12:25.933836702+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T16:28:42.667319782+08:00","level":"INFO","msg":"api: retrying HTTP error","status":502,"url":"https://api.wandb.ai/files/3528942762/academic-style-text-gen/cyagrsha/file_stream"}
+{"time":"2024-12-21T18:42:37.490311882+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T18:42:37.491392578+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T18:42:38.490774806+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.405651315},{"desc":"uploading config.yaml","runtime_seconds":0.113920412},{"desc":"uploading output.log","runtime_seconds":0.113909252}],"total_operations":3}}
+{"time":"2024-12-21T18:42:39.431475072+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T18:42:41.408406745+08:00","level":"INFO","msg":"stream: closing","id":"cyagrsha"}
+{"time":"2024-12-21T18:42:41.408436885+08:00","level":"INFO","msg":"handler: closed","stream_id":"cyagrsha"}
+{"time":"2024-12-21T18:42:41.408453345+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cyagrsha"}
+{"time":"2024-12-21T18:42:41.408497955+08:00","level":"INFO","msg":"sender: closed","stream_id":"cyagrsha"}
+{"time":"2024-12-21T18:42:41.408587205+08:00","level":"INFO","msg":"stream: closed","id":"cyagrsha"}

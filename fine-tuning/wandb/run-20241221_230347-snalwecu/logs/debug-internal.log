@@ -1,0 +1,18 @@
+{"time":"2024-12-21T23:03:47.511126008+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:03:47.511139448+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_230347-snalwecu/logs/debug-core.log"}
+{"time":"2024-12-21T23:03:48.031680154+08:00","level":"INFO","msg":"created new stream","id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.031751563+08:00","level":"INFO","msg":"stream: started","id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.031827113+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.031862753+08:00","level":"INFO","msg":"sender: started","stream_id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.031936643+08:00","level":"INFO","msg":"handler: started","stream_id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.534059325+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-12-21T23:03:48.534156675+08:00","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 404 Not Found: {\"errors\":[{\"message\":\"entity academic_finetuning not found during upsertBucket\",\"path\":[\"upsertBucket\"]}],\"data\":{\"upsertBucket\":null}}"}
+{"time":"2024-12-21T23:03:48.544834601+08:00","level":"INFO","msg":"stream: closing","id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.545503258+08:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2024-12-21T23:03:48.903696554+08:00","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2024-12-21T23:03:48.903789363+08:00","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404 Not Found: {\"errors\":[{\"message\":\"entity academic_finetuning not found during createRunFiles\",\"path\":[\"createRunFiles\"]}],\"data\":{\"createRunFiles\":null}}"}
+{"time":"2024-12-21T23:03:48.904668619+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:03:48.904779939+08:00","level":"INFO","msg":"handler: closed","stream_id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.904797219+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.904812919+08:00","level":"INFO","msg":"sender: closed","stream_id":"snalwecu"}
+{"time":"2024-12-21T23:03:48.904882138+08:00","level":"INFO","msg":"stream: closed","id":"snalwecu"}

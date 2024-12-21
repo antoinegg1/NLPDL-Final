@@ -131,8 +131,8 @@ def main():
 
 
             outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-            loss = outputs.loss.means()
-
+            loss = outputs.loss.mean()
+            wandb.log({"step": step, "loss": loss})
             optimizer.zero_grad()
             loss.backward()
             optimizer.step()
@@ -169,7 +169,7 @@ def main():
                 labels = batch["labels"].to(device)
 
                 outputs = model(input_ids=input_ids, attention_mask=attention_mask, labels=labels)
-                loss = outputs.loss
+                loss = outputs.loss.mean()
 
 
                 val_loss += loss.item()

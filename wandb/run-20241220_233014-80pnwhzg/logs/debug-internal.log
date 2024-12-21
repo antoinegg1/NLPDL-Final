@@ -1,0 +1,16 @@
+{"time":"2024-12-20T23:30:14.95535501+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-20T23:30:14.9553813+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/wandb/run-20241220_233014-80pnwhzg/logs/debug-core.log"}
+{"time":"2024-12-20T23:30:15.277745915+08:00","level":"INFO","msg":"created new stream","id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:15.277809535+08:00","level":"INFO","msg":"stream: started","id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:15.277900114+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:15.277922523+08:00","level":"INFO","msg":"sender: started","stream_id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:15.277966253+08:00","level":"INFO","msg":"handler: started","stream_id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:15.928355898+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-20T23:30:28.285870932+08:00","level":"INFO","msg":"stream: closing","id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:28.285955361+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-20T23:30:28.286857151+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-20T23:30:29.944723899+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-20T23:30:30.615885625+08:00","level":"INFO","msg":"handler: closed","stream_id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:30.615920894+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:30.615972464+08:00","level":"INFO","msg":"sender: closed","stream_id":"80pnwhzg"}
+{"time":"2024-12-20T23:30:30.616076363+08:00","level":"INFO","msg":"stream: closed","id":"80pnwhzg"}
