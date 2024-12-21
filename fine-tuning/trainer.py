@@ -61,7 +61,6 @@ def initialize_trainer(
         run_name='gpt2-formal-finetuning',  # 可选：wandb run 名称
         logging_first_step=True,
         logging_strategy='steps',
-        evaluation_strategy='steps',
         eval_steps=logging_steps,
     )
 

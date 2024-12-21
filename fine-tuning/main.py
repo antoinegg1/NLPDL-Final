@@ -12,7 +12,7 @@ torchrun --nproc_per_node=8 main.py \
     --max_length 512 \
     --dataloader_num_workers 60 \
     --gradient_accumulation_steps 1 \
-    --wandb_project academic_finetuning \
+    --wandb_project academic_finetuning 
 '''
 import argparse
 import os
