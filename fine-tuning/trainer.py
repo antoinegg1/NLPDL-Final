@@ -47,8 +47,9 @@ def initialize_trainer(
         num_train_epochs=num_epochs,
         per_device_train_batch_size=train_batch_size,
         per_device_eval_batch_size=eval_batch_size,
-        evaluation_strategy='epoch',
-        save_strategy='epoch',
+        evaluation_strategy='steps',
+        save_strategy='steps',
+        save_steps=logging_steps,
         logging_dir=logging_dir,
         logging_steps=logging_steps,
         load_best_model_at_end=True,
@@ -56,7 +57,12 @@ def initialize_trainer(
         fp16=torch.cuda.is_available(),  # 如果有 GPU，启用 FP16
         dataloader_num_workers=dataloader_num_workers,
         gradient_accumulation_steps=gradient_accumulation_steps,
-        # 多 GPU 设置由 Trainer 自动处理
+        report_to='wandb',  # 报告到 wandb
+        run_name='gpt2-formal-finetuning',  # 可选：wandb run 名称
+        logging_first_step=True,
+        logging_strategy='steps',
+        evaluation_strategy='steps',
+        eval_steps=logging_steps,
     )
 
     data_collator = DataCollatorForLanguageModeling(
