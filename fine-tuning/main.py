@@ -13,7 +13,6 @@ torchrun --nproc_per_node=8 main.py \
     --dataloader_num_workers 60 \
     --gradient_accumulation_steps 4 \
     --wandb_project academic_finetuning \
-    --wandb_entity academic_finetuning
 '''
 import argparse
 import os
@@ -65,7 +64,6 @@ def main(args):
     # 初始化 wandb
     wandb.init(
         project=args.wandb_project,
-        entity=args.wandb_entity,
         config=vars(args),
         job_type="fine-tuning"
     )

@@ -95,6 +95,5 @@ def prepare_dataset(dataset: DatasetDict, tokenizer: GPT2Tokenizer, max_length: 
     tokenized_dataset = dataset.map(
         lambda examples: preprocess_function(examples, tokenizer, max_length=max_length),
         batched=True,
-        remove_columns=dataset['train'].column_names
     )
     return tokenized_dataset
