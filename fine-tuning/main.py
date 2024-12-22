@@ -3,7 +3,7 @@
 torchrun --nproc_per_node=8 main.py \
     --train_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/train \
     --val_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/val \
-    --output_dir /mnt/file2/changye/model/t5-formal-finetuned \
+    --output_dir /mnt/file2/changye/model/Mistral-7B-formal-finetuned \
     --logging_dir ./logs \
     --num_epochs 3 \
     --train_batch_size 2 \
@@ -13,7 +13,7 @@ torchrun --nproc_per_node=8 main.py \
     --dataloader_num_workers 60 \
     --gradient_accumulation_steps 1 \
     --wandb_project academic_finetuning \
-    --model_name_or_path /mnt/file2/changye/model/fine_tuned_t5/fine_tuned_t5
+    --model_name_or_path /mnt/file2/changye/model/Mistral-7B-Instruct-v0.2
 '''
 import argparse
 import os
