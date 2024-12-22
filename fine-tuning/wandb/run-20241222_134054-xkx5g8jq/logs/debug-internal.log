@@ -1,0 +1,17 @@
+{"time":"2024-12-22T13:40:54.061427743+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-22T13:40:54.061453323+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241222_134054-xkx5g8jq/logs/debug-core.log"}
+{"time":"2024-12-22T13:40:54.688612653+08:00","level":"INFO","msg":"created new stream","id":"xkx5g8jq"}
+{"time":"2024-12-22T13:40:54.688698213+08:00","level":"INFO","msg":"stream: started","id":"xkx5g8jq"}
+{"time":"2024-12-22T13:40:54.688751544+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xkx5g8jq"}
+{"time":"2024-12-22T13:40:54.688799174+08:00","level":"INFO","msg":"sender: started","stream_id":"xkx5g8jq"}
+{"time":"2024-12-22T13:40:54.688882544+08:00","level":"INFO","msg":"handler: started","stream_id":"xkx5g8jq"}
+{"time":"2024-12-22T13:40:55.705259554+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-22T20:01:46.133384862+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-22T20:01:46.134576349+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-22T20:01:47.09237457+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.643500046,"progress":"477B/477B"},{"desc":"uploading config.yaml","runtime_seconds":0.297383472,"progress":"10.6KB/10.6KB"},{"desc":"uploading output.log","runtime_seconds":0.297366192,"progress":"13.3KB/13.3KB"}],"total_operations":3}}
+{"time":"2024-12-22T20:01:47.384838024+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-22T20:01:49.478696168+08:00","level":"INFO","msg":"stream: closing","id":"xkx5g8jq"}
+{"time":"2024-12-22T20:01:49.478761829+08:00","level":"INFO","msg":"handler: closed","stream_id":"xkx5g8jq"}
+{"time":"2024-12-22T20:01:49.478786699+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"xkx5g8jq"}
+{"time":"2024-12-22T20:01:49.478842939+08:00","level":"INFO","msg":"sender: closed","stream_id":"xkx5g8jq"}
+{"time":"2024-12-22T20:01:49.478889019+08:00","level":"INFO","msg":"stream: closed","id":"xkx5g8jq"}

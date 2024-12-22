@@ -1,0 +1,15 @@
+训练集加载完成，共有 32000 个样本。
+验证集加载完成，共有 4000 个样本。
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 32000/32000 [00:34<00:00, 915.78 examples/s]
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 4000/4000 [00:04<00:00, 903.14 examples/s]
+数据预处理完成。
+/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/mnt/file2/changye/NLPFINAL/fine-tuning/trainer.py:81: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+  0%|                                                                                                                               | 0/6000 [00:00<?, ?it/s]Passing a tuple of `past_key_values` is deprecated and will be removed in Transformers v4.48.0. You should pass an instance of `EncoderDecoderCache` instead, e.g. `past_key_values=EncoderDecoderCache.from_legacy_cache(past_key_values)`.
+  2%|██▋                                                                                                                | 142/6000 [08:38<5:30:12,  3.38s/it]
+{'loss': 0.0, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.0}
+{'loss': 0.0134, 'grad_norm': nan, 'learning_rate': 5e-05, 'epoch': 0.05}
+                                                                                                                                                             
+{'eval_loss': nan, 'eval_runtime': 26.6952, 'eval_samples_per_second': 149.84, 'eval_steps_per_second': 9.365, 'epoch': 0.05}

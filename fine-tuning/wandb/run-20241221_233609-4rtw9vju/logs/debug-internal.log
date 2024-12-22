@@ -1,0 +1,18 @@
+{"time":"2024-12-21T23:36:09.599936011+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:36:09.599964191+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_233609-4rtw9vju/logs/debug-core.log"}
+{"time":"2024-12-21T23:36:09.823947805+08:00","level":"INFO","msg":"created new stream","id":"4rtw9vju"}
+{"time":"2024-12-21T23:36:09.824017235+08:00","level":"INFO","msg":"stream: started","id":"4rtw9vju"}
+{"time":"2024-12-21T23:36:09.824113055+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"4rtw9vju"}
+{"time":"2024-12-21T23:36:09.824137005+08:00","level":"INFO","msg":"handler: started","stream_id":"4rtw9vju"}
+{"time":"2024-12-21T23:36:09.824223956+08:00","level":"INFO","msg":"sender: started","stream_id":"4rtw9vju"}
+{"time":"2024-12-21T23:36:10.954848726+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-22T02:31:32.228808274+08:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/3528942762/academic_finetuning/4rtw9vju/file_stream"}
+{"time":"2024-12-22T02:31:40.186826611+08:00","level":"INFO","msg":"api: retrying HTTP error","status":500,"url":"https://api.wandb.ai/files/3528942762/academic_finetuning/4rtw9vju/file_stream"}
+{"time":"2024-12-22T06:21:56.50635283+08:00","level":"INFO","msg":"stream: closing","id":"4rtw9vju"}
+{"time":"2024-12-22T06:21:56.506438649+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-22T06:21:56.507808761+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-22T06:21:58.468584875+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-22T06:21:59.327052763+08:00","level":"INFO","msg":"handler: closed","stream_id":"4rtw9vju"}
+{"time":"2024-12-22T06:21:59.327124993+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"4rtw9vju"}
+{"time":"2024-12-22T06:21:59.327145743+08:00","level":"INFO","msg":"sender: closed","stream_id":"4rtw9vju"}
+{"time":"2024-12-22T06:21:59.327352621+08:00","level":"INFO","msg":"stream: closed","id":"4rtw9vju"}

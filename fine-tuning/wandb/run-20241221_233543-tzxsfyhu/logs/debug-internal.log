@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:35:43.062208647+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:35:43.062236828+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_233543-tzxsfyhu/logs/debug-core.log"}
+{"time":"2024-12-21T23:35:43.584129101+08:00","level":"INFO","msg":"created new stream","id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:43.584159271+08:00","level":"INFO","msg":"stream: started","id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:43.584278552+08:00","level":"INFO","msg":"sender: started","stream_id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:43.584295232+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:43.585874188+08:00","level":"INFO","msg":"handler: started","stream_id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:44.300937281+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:35:53.711789877+08:00","level":"INFO","msg":"stream: closing","id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:53.711876898+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:35:53.712899902+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:35:54.874204334+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:35:55.7838298+08:00","level":"INFO","msg":"handler: closed","stream_id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:55.783882911+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:55.783892651+08:00","level":"INFO","msg":"sender: closed","stream_id":"tzxsfyhu"}
+{"time":"2024-12-21T23:35:55.784021911+08:00","level":"INFO","msg":"stream: closed","id":"tzxsfyhu"}

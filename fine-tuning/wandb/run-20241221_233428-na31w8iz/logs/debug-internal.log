@@ -1,0 +1,16 @@
+{"time":"2024-12-21T23:34:28.247826688+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:34:28.247852508+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_233428-na31w8iz/logs/debug-core.log"}
+{"time":"2024-12-21T23:34:28.467961665+08:00","level":"INFO","msg":"created new stream","id":"na31w8iz"}
+{"time":"2024-12-21T23:34:28.468016015+08:00","level":"INFO","msg":"stream: started","id":"na31w8iz"}
+{"time":"2024-12-21T23:34:28.468078856+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"na31w8iz"}
+{"time":"2024-12-21T23:34:28.468155826+08:00","level":"INFO","msg":"sender: started","stream_id":"na31w8iz"}
+{"time":"2024-12-21T23:34:28.468157806+08:00","level":"INFO","msg":"handler: started","stream_id":"na31w8iz"}
+{"time":"2024-12-21T23:34:29.458891642+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-21T23:34:38.623035623+08:00","level":"INFO","msg":"stream: closing","id":"na31w8iz"}
+{"time":"2024-12-21T23:34:38.624151307+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-21T23:34:38.625235042+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-21T23:34:39.741273735+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-21T23:34:40.678214567+08:00","level":"INFO","msg":"handler: closed","stream_id":"na31w8iz"}
+{"time":"2024-12-21T23:34:40.678290407+08:00","level":"INFO","msg":"sender: closed","stream_id":"na31w8iz"}
+{"time":"2024-12-21T23:34:40.678278817+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"na31w8iz"}
+{"time":"2024-12-21T23:34:40.678409538+08:00","level":"INFO","msg":"stream: closed","id":"na31w8iz"}

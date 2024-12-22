@@ -1,0 +1,16 @@
+{"time":"2024-12-22T12:18:35.219718818+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-22T12:18:35.219744928+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241222_121835-cyatkm53/logs/debug-core.log"}
+{"time":"2024-12-22T12:18:36.544152215+08:00","level":"INFO","msg":"created new stream","id":"cyatkm53"}
+{"time":"2024-12-22T12:18:36.544184405+08:00","level":"INFO","msg":"stream: started","id":"cyatkm53"}
+{"time":"2024-12-22T12:18:36.544216085+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"cyatkm53"}
+{"time":"2024-12-22T12:18:36.544263115+08:00","level":"INFO","msg":"handler: started","stream_id":"cyatkm53"}
+{"time":"2024-12-22T12:18:36.544351755+08:00","level":"INFO","msg":"sender: started","stream_id":"cyatkm53"}
+{"time":"2024-12-22T12:18:37.143395352+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-22T12:18:38.893547157+08:00","level":"INFO","msg":"stream: closing","id":"cyatkm53"}
+{"time":"2024-12-22T12:18:38.893630157+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-22T12:18:38.894884975+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-22T12:18:40.57473316+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-22T12:18:41.476352019+08:00","level":"INFO","msg":"handler: closed","stream_id":"cyatkm53"}
+{"time":"2024-12-22T12:18:41.476375689+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cyatkm53"}
+{"time":"2024-12-22T12:18:41.476417239+08:00","level":"INFO","msg":"sender: closed","stream_id":"cyatkm53"}
+{"time":"2024-12-22T12:18:41.476531909+08:00","level":"INFO","msg":"stream: closed","id":"cyatkm53"}

@@ -1,0 +1,8 @@
+{"time":"2024-12-21T23:35:09.506190658+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-21T23:35:09.506219108+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_233509-eat7slie/logs/debug-core.log"}
+{"time":"2024-12-21T23:35:09.729946759+08:00","level":"INFO","msg":"created new stream","id":"eat7slie"}
+{"time":"2024-12-21T23:35:09.730007069+08:00","level":"INFO","msg":"stream: started","id":"eat7slie"}
+{"time":"2024-12-21T23:35:09.730057709+08:00","level":"INFO","msg":"sender: started","stream_id":"eat7slie"}
+{"time":"2024-12-21T23:35:09.730057549+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"eat7slie"}
+{"time":"2024-12-21T23:35:09.73015251+08:00","level":"INFO","msg":"handler: started","stream_id":"eat7slie"}
+{"time":"2024-12-21T23:35:10.33346179+08:00","level":"INFO","msg":"Starting system monitor"}
