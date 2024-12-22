@@ -42,7 +42,7 @@ def initialize_trainer(
     Returns:
         Trainer: 初始化好的 Trainer 对象。
     """
-    if 'gpt2' in model_type.lower():
+    if 'gpt2' in model_type.lower() or 'mistral' in model_type.lower():
         data_collator = DataCollatorForLanguageModeling(
             tokenizer=tokenizer,
             mlm=False  # GPT-2 是自回归模型，不使用掩码语言模型

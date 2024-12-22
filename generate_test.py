@@ -24,12 +24,12 @@ def main():
 
     # 模型路径（请根据实际情况修改）
     GPT2_model_path = "/mnt/file2/changye/model/gpt2-formal-finetuned"  # 本地 LLaVA 模型权重路径
-    
+    tokenizer = GPT2Tokenizer.from_pretrained(GPT2_model_path)
+    llm = LLM(model=GPT2_model_path, tensor_parallel_size=4)  # 根据硬件条件调整 tensor_parallel_size
     # 加载本地数据集
     local_dataset = load_from_disk(dataset_path)
 
-    tokenizer = GPT2Tokenizer.from_pretrained(GPT2_model_path)
-    llm = LLM(model=GPT2_model_path, tensor_parallel_size=4)  # 根据硬件条件调整 tensor_parallel_size
+
 
 
 

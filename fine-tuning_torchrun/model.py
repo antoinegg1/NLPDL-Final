@@ -4,7 +4,9 @@ from transformers import (
     GPT2Tokenizer,
     GPT2LMHeadModel,
     T5Tokenizer,
-    T5ForConditionalGeneration
+    T5ForConditionalGeneration,
+    AutoTokenizer,
+    AutoModelForCausalLM,
 )
 import torch
 
@@ -29,6 +31,10 @@ def load_model_and_tokenizer(model_name: str, local_rank: int):
         tokenizer = T5Tokenizer.from_pretrained(model_name)
         model = T5ForConditionalGeneration.from_pretrained(model_name)
         model_type = 't5'
+    elif 'mistral' in model_name.lower():
+        tokenizer = AutoTokenizer.from_pretrained(model_name)
+        model=AutoModelForCausalLM.from_pretrained(model_name)
+        model_type = 'mistral'
     else:
         raise ValueError("Unsupported model type. Please choose 'gpt2' or 't5'.")
 

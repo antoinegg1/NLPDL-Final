@@ -35,9 +35,11 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
     Returns:
         dict: 分词后的输入和标签。
     """
-    if 'gpt2' in model_type.lower():
+    if 'gpt2' in model_type.lower() or 'mistral' in model_type.lower():
         # GPT-2 特有的系统提示
-        SYSTEM_PROMPT = """You are a helpful assistant. Your task is to convert casual text into formal text without changing the original meaning or altering the order of sentences. Keep the tone formal and professional, using appropriate language while ensuring that the core ideas remain intact. Please take the following casual text and rewrite it in a more formal way:
+        # SYSTEM_PROMPT = """You are a helpful assistant. Your task is to convert casual text into formal text without changing the original meaning or altering the order of sentences. Keep the tone formal and professional, using appropriate language while ensuring that the core ideas remain intact. Please take the following casual text and rewrite it in a more formal way:
+        # Casual: """
+        SYSTEM_PROMPT="""Convert casual text into formal text :
         Casual: """
         inputs = [f"{SYSTEM_PROMPT}{casual} Formal:" for casual in examples['casual_text']]
         targets = examples['formal_text']
