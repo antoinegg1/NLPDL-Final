@@ -6,6 +6,7 @@ import tqdm
 import numpy as np
 import logging
 import json
+# CUDA_VISIBLE_DEVICES=4,5,6,7
 logging.basicConfig(level=logging.WARNING)  # 只显示 WARNING 及以上级别的日志
 # SYSTEM_PROMPT = """You are a helpful assistant. Your task is to convert casual text into formal text without changing the original meaning or altering the order of sentences. Keep the tone formal and professional, using appropriate language while ensuring that the core ideas remain intact. Please take the following casual text and rewrite it in a more formal way:
 # Casual: """
@@ -16,9 +17,9 @@ SYSTEM_PROMPT ="""Convert casual text into formal text :
 def main():
     # 设置命令行参数解析器
     parser = argparse.ArgumentParser(description="Run formal test")
-    parser.add_argument("--data_set", type=str, default="/mnt/file2/changye/dataset/casual_formal_pair_ACL40k/test", help="Path to the local dataset to load using load_from_disk")
-    parser.add_argument("--save_path", type=str,default="/mnt/file2/changye/NLPFINAL/result/Qwen_formal_text_result.json", help="Path to save the inference results")
-    parser.add_argument("--model_path", type=str,default="/mnt/file2/changye/model/Qwen2.5-1.5B-Instruct", help="Path to save the inference results")
+    parser.add_argument("--data_set", type=str, default="/mnt/file2/changye/dataset/casual_formal_sentence_pair_ACL170k/test", help="Path to the local dataset to load using load_from_disk")
+    parser.add_argument("--save_path", type=str,default="/mnt/file2/changye/NLPFINAL/result/gpt2-pretrained_on_sentence.json", help="Path to save the inference results")
+    parser.add_argument("--model_path", type=str,default="/mnt/file2/changye/model/fine_tuned_gpt2", help="Path to save the inference results")
     args = parser.parse_args()
 
     dataset_path = args.data_set
@@ -30,7 +31,7 @@ def main():
     else :
         tokenizer = AutoTokenizer.from_pretrained(args.model_path)
         tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-        llm = LLM(model=args.model_path, tensor_parallel_size=4)
+        llm = LLM(model=args.model_path, tensor_parallel_size=8)
     # 加载本地数据集
     local_dataset = load_from_disk(dataset_path)
 
@@ -39,9 +40,9 @@ def main():
 
 
     # 定义批处理输入的函数
-    def prepare_inputs_batch(prompts,tokenizer):
-        inputs = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
-        return inputs
+    # def prepare_inputs_batch(prompts,tokenizer):
+    #     inputs = tokenizer(prompts, return_tensors="pt", padding=True, truncation=True)
+    #     return inputs
 
     # 设置批大小，可根据显存大小进行调整
     batch_size = 8
@@ -53,16 +54,19 @@ def main():
         top_p=0.95,
         max_tokens=512
     )
+    # number=100
 
     # 分批处理数据集
     for i in tqdm.trange(0, len(local_dataset), batch_size):
+        # if i>number:
+        #     break
         batch_data = local_dataset[i:i + batch_size]
         prompts =[f"{SYSTEM_PROMPT}{casual} Formal:" for casual in batch_data['casual_text']]
         # 准备批次请求
-        requests = prepare_inputs_batch(prompts,tokenizer)
+        # requests = prepare_inputs_batch(prompts,tokenizer)
 
         # 使用 vLLM 进行推理
-        outputs = llm.generate(requests, sampling_params=sampling_params)
+        outputs = llm.generate(prompts, sampling_params=sampling_params)
         # breakpoint()
         # 解码输出
         decoded_outputs = [output.outputs[0].text.strip() for output in outputs]

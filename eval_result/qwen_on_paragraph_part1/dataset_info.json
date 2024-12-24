@@ -1,0 +1,32 @@
+{
+  "citation": "",
+  "description": "",
+  "features": {
+    "evaluation": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "directory": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "filename": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "formal_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "casual_text": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "Model_formal_text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": ""
+}

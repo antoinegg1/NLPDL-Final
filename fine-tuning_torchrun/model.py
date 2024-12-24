@@ -34,6 +34,7 @@ def load_model_and_tokenizer(model_name: str, local_rank: int):
     else:
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         model=AutoModelForCausalLM.from_pretrained(model_name)
+        model_type=model_name
 
     # 添加填充标记（如果尚未添加）
     if tokenizer.pad_token is None:

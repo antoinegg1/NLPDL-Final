@@ -124,3 +124,59 @@ BERTScore: {'Precision': 0.8521018028259277, 'Recall': 0.8656085133552551, 'F1':
 Diversity: {'Distinct-n': {1: 0.2679535076795351, 2: 0.562266500622665, 3: 0.7027812370278124, 4: 0.7424242424242424}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
 Length Normalization: {'Average Length Ratio': 1.6308074362596552}
 ========================================
+
+
+
+
+### AI feedback
+
+mistral paragraph
+Style Transfer Strength:  0.7234793491864832
+Content Preservation:  0.8937421777221529
+Fluency:  0.8588986232790992
+
+gpt2-finetuned on paragraph
+Style Transfer Strength:  0.24415519399249064
+Content Preservation:  0.19118898623279104
+Fluency:  0.32615769712140175
+
+gpt2-finetuned on sentence
+Style Transfer Strength:  0.22100685733400235
+Content Preservation:  0.19541729386184983
+Fluency:  0.33191169091821365
+
+qwen-sentence
+Style Transfer Strength:  0.5504504504504505
+Content Preservation:  0.7384384384384385
+Fluency:  0.6790790790790792
+
+qwen-paragraph
+Style Transfer Strength:  0.6180602006688962
+Content Preservation:  0.7856187290969899
+Fluency:  0.7110367892976589
+
+mistral on sentence
+Style Transfer Strength:  0.7329999999999999
+Content Preservation:  0.8970000000000001
+Fluency:  0.8736666666666667
+
+gpt2 on paragraph
+Style Transfer Strength:  0.2461279461279461
+Content Preservation:  0.20875420875420875
+Fluency:  0.3501683501683502
+
+gpt2 on sentence
+Style Transfer Strength:  0.26107382550335567
+Content Preservation:  0.2389261744966443
+Fluency:  0.4003355704697987
+
+gpt2-pretrained on paragraph
+Style Transfer Strength:  0.2622895622895623
+Content Preservation:  0.22356902356902358
+Fluency:  0.3727272727272727
+
+
+gpt2-pretrained on sentence
+Style Transfer Strength:  0.24040404040404043
+Content Preservation:  0.21346801346801347
+Fluency:  0.39124579124579123
