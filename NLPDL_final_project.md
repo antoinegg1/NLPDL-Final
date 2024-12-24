@@ -2,6 +2,10 @@
 
 2200017853 李长烨
 
+## Abstract
+
+我们从ACL文章构建了一个预训练数据集和一个偏好数据集，用于训练从非正式文本到ACL风格的正式文本的迁移，我们在T5模型和GPT2模型上进行了训练，并且我们构建了评测集，通过AI feedback评测风格迁移的质量，我们对训练好的T5模型，GPT2模型和通用的一个大模型mistral7b模型进行了评测
+
 ## Motivation
 
 Academic writing can be challenging for students, often resulting in drafts that are rough or inconsistent in style. Automating the refinement of such writing through Text Style Transfer (TST) offers a practical solution to enhance clarity, coherence, and adherence to academic conventions.
@@ -45,3 +49,78 @@ This project aims to achieve the following:
 3. **Impact**: Provide insights into the strengths and limitations of LLMs in handling nuanced style transfer tasks, particularly in academic contexts.  
 
 By advancing TST methodologies and offering a structured evaluation, this project has the potential to contribute valuable tools and techniques for automated academic writing enhancement.
+
+
+## evaluation result
+
+### automate
+========== Evaluation Results ==========
+Model Type: gpt2
+Model Name: /mnt/file2/changye/model/gpt2-formal-finetuned_short_prompt/checkpoint-4000
+Data Path: /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/test
+----------------------------------------
+BLEU Score: 0.1066
+ROUGE Scores: {'rouge-1': {'r': 0.2901783762995762, 'p': 0.39728214144495133, 'f': 0.29979913104882366}, 'rouge-2': {'r': 0.1864647756365796, 'p': 0.22873244688008956, 'f': 0.17361335854152757}, 'rouge-l': {'r': 0.28352213243550917, 'p': 0.38727167196709034, 'f': 0.29230421642973614}}
+Perplexity: 9.0371
+BERTScore: {'Precision': 0.8551714420318604, 'Recall': 0.8433540463447571, 'F1': 0.848703145980835}
+Diversity: {'Distinct-n': {1: 0.2517834662190516, 2: 0.5493075954678976, 3: 0.6783466219051616, 4: 0.7310113302559799}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.0679772153113702}
+========================================
+Model Type: gpt2
+Model Name: /mnt/file2/changye/model/gpt2-large
+Data Path: /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/test
+BLEU Score: 0.1113
+ROUGE Scores: {'rouge-1': {'r': 0.2755501660204627, 'p': 0.49452518394649203, 'f': 0.3104046359244537}, 'rouge-2': {'r': 0.18706580495879016, 'p': 0.2944180198047594, 'f': 0.19013755284954736}, 'rouge-l': {'r': 0.271100427555902, 'p': 0.48495755492695464, 'f': 0.30479218521834417}}
+Perplexity: 6.1339
+BERTScore: {'Precision': 0.845746636390686, 'Recall': 0.8364123702049255, 'F1': 0.8404953479766846}
+Diversity: {'Distinct-n': {1: 0.26366898881148404, 2: 0.5330377876293012, 3: 0.6554781507283091, 4: 0.6896770107663078}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.0210514291375687}
+
+========== Evaluation Results ==========
+Model Type: gpt2
+Model Name: /mnt/file2/changye/model/fine_tuned_gpt2
+Data Path: /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/test
+----------------------------------------
+BLEU Score: 0.0984
+ROUGE Scores: {'rouge-1': {'r': 0.2879051908486429, 'p': 0.48625790276958325, 'f': 0.3171666368112837}, 'rouge-2': {'r': 0.18737824523790667, 'p': 0.29591344915432055, 'f': 0.18298151929295436}, 'rouge-l': {'r': 0.28038221169176203, 'p': 0.4717211493319388, 'f': 0.30778125727697936}}
+Perplexity: 5.3937
+BERTScore: {'Precision': 0.8643019199371338, 'Recall': 0.8424625992774963, 'F1': 0.8526028990745544}
+Diversity: {'Distinct-n': {1: 0.2467202708421498, 2: 0.5588235294117647, 3: 0.7200592467202709, 4: 0.7771900126957257}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.0650099097572063}
+========================================
+========== Evaluation Results ==========
+Model Type: gpt2
+Model Name: /mnt/file2/changye/model/fine_tuned_gpt2
+Data Path: /mnt/file2/changye/dataset/casual_formal_sentence_pair_ACL170k/test
+----------------------------------------
+BLEU Score: 0.1561
+ROUGE Scores: {'rouge-1': {'r': 0.3969971778290537, 'p': 0.44131888341105985, 'f': 0.3940078096487681}, 'rouge-2': {'r': 0.2702746917571915, 'p': 0.2808448345814971, 'f': 0.24939973231273352}, 'rouge-l': {'r': 0.3880521989894386, 'p': 0.43102568808409075, 'f': 0.38484035567891545}}
+Perplexity: 5.2115
+BERTScore: {'Precision': 0.8579785823822021, 'Recall': 0.8713116645812988, 'F1': 0.8641879558563232}
+Diversity: {'Distinct-n': {1: 0.2517879680269247, 2: 0.5532183424484645, 3: 0.720445940260833, 4: 0.7787126630206143}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.6549784895740496}
+========================================
+========== Evaluation Results ==========
+Model Type: gpt2
+Model Name: /mnt/file2/changye/model/gpt2-formal-finetuned_short_prompt/checkpoint-4000
+Data Path: /mnt/file2/changye/dataset/casual_formal_sentence_pair_ACL170k/test
+----------------------------------------
+BLEU Score: 0.1577
+ROUGE Scores: {'rouge-1': {'r': 0.3999664559464171, 'p': 0.34855727521881535, 'f': 0.3529024212016193}, 'rouge-2': {'r': 0.26314291541414025, 'p': 0.21207068146688335, 'f': 0.21893502407446142}, 'rouge-l': {'r': 0.387864154162954, 'p': 0.33770273072734375, 'f': 0.34187359726888394}}
+Perplexity: 8.8030
+BERTScore: {'Precision': 0.8553260564804077, 'Recall': 0.8733161687850952, 'F1': 0.8639866709709167}
+Diversity: {'Distinct-n': {1: 0.2594752186588921, 2: 0.5689296126613911, 3: 0.7142857142857143, 4: 0.7634319033735943}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.7640002277178646}
+========================================
+========== Evaluation Results ==========
+Model Type: gpt2
+Model Name: /mnt/file2/changye/model/gpt2-large
+Data Path: /mnt/file2/changye/dataset/casual_formal_sentence_pair_ACL170k/test
+----------------------------------------
+BLEU Score: 0.1639
+ROUGE Scores: {'rouge-1': {'r': 0.3801270372039081, 'p': 0.40836387126262436, 'f': 0.37682656657361113}, 'rouge-2': {'r': 0.2621909106739208, 'p': 0.24784176838846594, 'f': 0.24124100676403226}, 'rouge-l': {'r': 0.37377557339596407, 'p': 0.40134997844636827, 'f': 0.3702566387049073}}
+Perplexity: 6.1114
+BERTScore: {'Precision': 0.8521018028259277, 'Recall': 0.8656085133552551, 'F1': 0.8585867285728455}
+Diversity: {'Distinct-n': {1: 0.2679535076795351, 2: 0.562266500622665, 3: 0.7027812370278124, 4: 0.7424242424242424}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.6308074362596552}
+========================================

@@ -31,12 +31,9 @@ def load_model_and_tokenizer(model_name: str, local_rank: int):
         tokenizer = T5Tokenizer.from_pretrained(model_name)
         model = T5ForConditionalGeneration.from_pretrained(model_name)
         model_type = 't5'
-    elif 'mistral' in model_name.lower():
+    else:
         tokenizer = AutoTokenizer.from_pretrained(model_name)
         model=AutoModelForCausalLM.from_pretrained(model_name)
-        model_type = 'mistral'
-    else:
-        raise ValueError("Unsupported model type. Please choose 'gpt2' or 't5'.")
 
     # 添加填充标记（如果尚未添加）
     if tokenizer.pad_token is None:

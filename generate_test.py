@@ -1,6 +1,6 @@
 import argparse
 from vllm import LLM, SamplingParams
-from transformers import GPT2Tokenizer
+from transformers import GPT2Tokenizer,AutoTokenizer
 from datasets import load_from_disk,Array3D
 import tqdm
 import numpy as np
@@ -9,23 +9,28 @@ import json
 logging.basicConfig(level=logging.WARNING)  # 只显示 WARNING 及以上级别的日志
 # SYSTEM_PROMPT = """You are a helpful assistant. Your task is to convert casual text into formal text without changing the original meaning or altering the order of sentences. Keep the tone formal and professional, using appropriate language while ensuring that the core ideas remain intact. Please take the following casual text and rewrite it in a more formal way:
 # Casual: """
-SYSTEM_PROMPT ="""Convert casual text to formal text: """
+SYSTEM_PROMPT ="""Convert casual text into formal text :
+        Casual: """
 
 # import pdb; pdb.set_trace()
 def main():
     # 设置命令行参数解析器
     parser = argparse.ArgumentParser(description="Run formal test")
     parser.add_argument("--data_set", type=str, default="/mnt/file2/changye/dataset/casual_formal_pair_ACL40k/test", help="Path to the local dataset to load using load_from_disk")
-    parser.add_argument("--save_path", type=str,default="/mnt/file2/changye/NLPFINAL/result/gpt2_formal_text_result.json", help="Path to save the inference results")
+    parser.add_argument("--save_path", type=str,default="/mnt/file2/changye/NLPFINAL/result/Qwen_formal_text_result.json", help="Path to save the inference results")
+    parser.add_argument("--model_path", type=str,default="/mnt/file2/changye/model/Qwen2.5-1.5B-Instruct", help="Path to save the inference results")
     args = parser.parse_args()
 
     dataset_path = args.data_set
     save_path = args.save_path
-
     # 模型路径（请根据实际情况修改）
-    GPT2_model_path = "/mnt/file2/changye/model/gpt2-formal-finetuned"  # 本地 LLaVA 模型权重路径
-    tokenizer = GPT2Tokenizer.from_pretrained(GPT2_model_path)
-    llm = LLM(model=GPT2_model_path, tensor_parallel_size=4)  # 根据硬件条件调整 tensor_parallel_size
+    if "gpt2" in args.model_path.lower():
+        tokenizer = GPT2Tokenizer.from_pretrained(args.model_path)
+        llm = LLM(model=args.model_path, tensor_parallel_size=4)  # 根据硬件条件调整 tensor_parallel_size
+    else :
+        tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+        tokenizer.add_special_tokens({'pad_token': '[PAD]'})
+        llm = LLM(model=args.model_path, tensor_parallel_size=4)
     # 加载本地数据集
     local_dataset = load_from_disk(dataset_path)
 
@@ -66,7 +71,7 @@ def main():
             results.append({
                 "casual_text": batch_data['casual_text'][j],
                 "formal_text": batch_data['formal_text'][j],
-                "GPT2_formal_text": output,
+                "Model_formal_text": output,
                 "directory": batch_data['directory'][j],
                 "filename": batch_data['filename'][j]
             })

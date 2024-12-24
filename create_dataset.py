@@ -60,7 +60,7 @@ def run_experiment(save_path, max_workers=10, chunk_size=10000):
     API_KEY = "sk-b152415699674f74a0046c553238e2f3"  # 修改为你的API Key
 
     # 加载数据集
-    dataset = load_from_disk("/mnt/file2/changye/NLPFINAL/clear_ACL_sentences80k")
+    dataset = load_from_disk("/mnt/file2/changye/model/clear_ACL_sentence170k")
 
     # 设置系统提示语
     system_prompt = """You are a helpful assistant. Your task is to convert formal text into informal text without changing the original meaning or altering the order of sentences. Keep the tone casual and conversational, using everyday language while ensuring that the core ideas remain intact.Please take the following formal text and rewrite it in a more informal way:
@@ -101,7 +101,7 @@ def run_experiment(save_path, max_workers=10, chunk_size=10000):
 
 def main():
     parser = argparse.ArgumentParser(description="Run GSM8K experiment with different settings.")
-    parser.add_argument("--save_path", type=str, default="/mnt/file2/changye/NLPFINAL/casual_formal_pair_ACL80k")
+    parser.add_argument("--save_path", type=str, default="/mnt/file2/changye/NLPFINAL/casual_formal_sentence_pair_ACL170k")
     parser.add_argument("--max_workers", type=int, default=60, help="并行工作的最大线程数")
     parser.add_argument("--chunk_size", type=int, default=10000, help="每个分段保存的样本数")
     args = parser.parse_args()

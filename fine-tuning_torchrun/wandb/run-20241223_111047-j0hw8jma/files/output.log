@@ -1,0 +1,11 @@
+训练集加载完成，共有 32000 个样本。
+验证集加载完成，共有 4000 个样本。
+Map:   0%|                                                                                                                  | 0/32000 [00:00<?, ? examples/s]Token indices sequence length is longer than the specified maximum sequence length for this model (1675 > 1024). Running this sequence through the model will result in indexing errors
+Map: 100%|█████████████████████████████████████████████████████████████████████████████████████████████████████| 32000/32000 [01:23<00:00, 383.67 examples/s]
+Map: 100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 4000/4000 [00:10<00:00, 368.24 examples/s]
+数据预处理完成。
+/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+/mnt/file2/changye/NLPFINAL/fine-tuning_torchrun/trainer.py:74: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+  0%|                                                                                                                               | 0/6000 [00:00<?, ?it/s]

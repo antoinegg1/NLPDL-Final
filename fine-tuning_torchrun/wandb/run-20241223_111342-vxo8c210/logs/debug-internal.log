@@ -1,0 +1,29 @@
+{"time":"2024-12-23T11:13:42.261840542+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-23T11:13:42.261870102+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_torchrun/wandb/run-20241223_111342-vxo8c210/logs/debug-core.log"}
+{"time":"2024-12-23T11:13:42.485487408+08:00","level":"INFO","msg":"created new stream","id":"vxo8c210"}
+{"time":"2024-12-23T11:13:42.485568739+08:00","level":"INFO","msg":"stream: started","id":"vxo8c210"}
+{"time":"2024-12-23T11:13:42.485674849+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"vxo8c210"}
+{"time":"2024-12-23T11:13:42.4857007+08:00","level":"INFO","msg":"handler: started","stream_id":"vxo8c210"}
+{"time":"2024-12-23T11:13:42.48575253+08:00","level":"INFO","msg":"sender: started","stream_id":"vxo8c210"}
+{"time":"2024-12-23T11:13:43.484869744+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2024-12-23T13:02:16.957864419+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/academic_finetuning/vxo8c210/file_stream\": unexpected EOF"}
+{"time":"2024-12-23T13:02:19.431941819+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/academic_finetuning/vxo8c210/file_stream\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:22.079347576+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:23.682707621+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/academic_finetuning/vxo8c210/file_stream\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:24.367244193+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:29.083575781+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:33.017358307+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/academic_finetuning/vxo8c210/file_stream\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:37.711255684+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:50.950972496+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/academic_finetuning/vxo8c210/file_stream\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:02:57.249976175+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:03:24.157515263+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/academic_finetuning/vxo8c210/file_stream\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T13:03:32.510997476+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": proxyconnect tcp: dial tcp 127.0.0.1:7895: connect: connection refused"}
+{"time":"2024-12-23T17:48:10.680950931+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2024-12-23T17:48:10.699533553+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2024-12-23T17:48:11.682071391+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.555250418,"progress":"522B/522B"},{"desc":"uploading config.yaml","runtime_seconds":0.200234965,"progress":"9.9KB/9.9KB"},{"desc":"uploading output.log","runtime_seconds":0.200219805,"progress":"15.9KB/15.9KB"}],"total_operations":3}}
+{"time":"2024-12-23T17:48:12.539692571+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2024-12-23T17:48:14.090063047+08:00","level":"INFO","msg":"stream: closing","id":"vxo8c210"}
+{"time":"2024-12-23T17:48:14.090110135+08:00","level":"INFO","msg":"handler: closed","stream_id":"vxo8c210"}
+{"time":"2024-12-23T17:48:14.090130244+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"vxo8c210"}
+{"time":"2024-12-23T17:48:14.090186151+08:00","level":"INFO","msg":"sender: closed","stream_id":"vxo8c210"}
+{"time":"2024-12-23T17:48:14.090268597+08:00","level":"INFO","msg":"stream: closed","id":"vxo8c210"}
