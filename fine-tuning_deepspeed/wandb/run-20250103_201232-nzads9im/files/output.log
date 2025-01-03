@@ -1,0 +1,21 @@
+INFO:__main__:Loaded model_type: /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct
+INFO:__main__:Dataset loaded successfully.
+INFO:__main__:Dataset tokenized successfully.
+/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+[2025-01-03 20:12:45,871] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -c /tmp/tmpe6slgyn6/test.c -o /tmp/tmpe6slgyn6/test.o
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat /tmp/tmpe6slgyn6/test.o -laio -o /tmp/tmpe6slgyn6/a.out
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -c /tmp/tmplq1t0zx2/test.c -o /tmp/tmplq1t0zx2/test.o
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat /tmp/tmplq1t0zx2/test.o -L/usr/local/cuda -L/usr/local/cuda/lib64 -lcufile -o /tmp/tmplq1t0zx2/a.out
+[2025-01-03 20:12:47,017] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-03 20:12:47,018] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py:117: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+INFO:__main__:Starting training with DeepSpeed & W&B logging...
+  4%|███▏                                                                                       | 107/3000 [09:23<4:43:30,  5.88s/it]
+{'loss': 2.9017, 'grad_norm': 5.024621486663818, 'learning_rate': 3e-06, 'epoch': 0.05}
+                                                                                                                                     
+{'eval_loss': 2.2585175037384033, 'eval_runtime': 17.6381, 'eval_samples_per_second': 226.782, 'eval_steps_per_second': 7.087, 'epoch': 0.05}
+{'loss': 2.2009, 'grad_norm': 3.85324764251709, 'learning_rate': 8.000000000000001e-06, 'epoch': 0.1}
+{'eval_loss': 2.132246494293213, 'eval_runtime': 17.981, 'eval_samples_per_second': 222.457, 'eval_steps_per_second': 6.952, 'epoch': 0.1}

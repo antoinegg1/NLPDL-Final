@@ -1,0 +1,12 @@
+deepspeed train.py \
+    --train_dataset /mnt/file2/changye/dataset/NLP/casual_formal_pair_ACL40k/train \
+    --val_dataset /mnt/file2/changye/dataset/NLP/casual_formal_pair_ACL40k/val \
+    --model_path /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct \
+    --epochs 3 \
+    --batch_size 4 \
+    --learning_rate 5e-5 \
+    --fp16 \
+    --deepspeed_config ds_config.json \
+    --wandb_project qwen \
+    --wandb_run_name qwen \
+    --output_dir /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct-finetune 

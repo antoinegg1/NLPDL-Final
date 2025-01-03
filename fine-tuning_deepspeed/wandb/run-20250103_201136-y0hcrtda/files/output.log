@@ -1,0 +1,47 @@
+INFO:__main__:Loaded model_type: /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct
+INFO:__main__:Dataset loaded successfully.
+INFO:__main__:Dataset tokenized successfully.
+/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/training_args.py:1575: FutureWarning: `evaluation_strategy` is deprecated and will be removed in version 4.46 of 🤗 Transformers. Use `eval_strategy` instead
+  warnings.warn(
+[2025-01-03 20:11:48,662] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -c /tmp/tmpm6d47sd0/test.c -o /tmp/tmpm6d47sd0/test.o
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat /tmp/tmpm6d47sd0/test.o -laio -o /tmp/tmpm6d47sd0/a.out
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -O2 -isystem /home/changye/miniconda3/envs/ML/include -fPIC -c /tmp/tmp9uf2j1iz/test.c -o /tmp/tmp9uf2j1iz/test.o
+INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat /tmp/tmp9uf2j1iz/test.o -L/usr/local/cuda -L/usr/local/cuda/lib64 -lcufile -o /tmp/tmp9uf2j1iz/a.out
+[2025-01-03 20:11:49,799] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-01-03 20:11:49,799] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py:117: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
+  trainer = Trainer(
+INFO:__main__:Starting training with DeepSpeed & W&B logging...
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 142, in <module>
+[rank0]:     main()
+[rank0]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 128, in main
+[rank0]:     train_result = trainer.train()
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2164, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2262, in _inner_training_loop
+[rank0]:     self.optimizer, self.lr_scheduler = deepspeed_init(self, num_training_steps=max_steps)
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/integrations/deepspeed.py", line 398, in deepspeed_init
+[rank0]:     hf_deepspeed_config.trainer_config_finalize(args, model, num_training_steps)
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/integrations/deepspeed.py", line 270, in trainer_config_finalize
+[rank0]:     raise ValueError(
+[rank0]: ValueError: Please correct the following DeepSpeed config values that mismatch TrainingArguments values:
+[rank0]: - ds train_batch_size=32 vs hf train_batch_size (calculated)=16
+[rank0]: The easiest method is to set these DeepSpeed config values to 'auto'.
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 142, in <module>
+[rank0]:     main()
+[rank0]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 128, in main
+[rank0]:     train_result = trainer.train()
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2164, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/trainer.py", line 2262, in _inner_training_loop
+[rank0]:     self.optimizer, self.lr_scheduler = deepspeed_init(self, num_training_steps=max_steps)
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/integrations/deepspeed.py", line 398, in deepspeed_init
+[rank0]:     hf_deepspeed_config.trainer_config_finalize(args, model, num_training_steps)
+[rank0]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/integrations/deepspeed.py", line 270, in trainer_config_finalize
+[rank0]:     raise ValueError(
+[rank0]: ValueError: Please correct the following DeepSpeed config values that mismatch TrainingArguments values:
+[rank0]: - ds train_batch_size=32 vs hf train_batch_size (calculated)=16
+[rank0]: The easiest method is to set these DeepSpeed config values to 'auto'.

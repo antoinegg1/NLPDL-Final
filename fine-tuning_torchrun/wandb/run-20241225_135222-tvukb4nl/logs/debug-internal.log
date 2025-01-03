@@ -1,0 +1,13 @@
+{"time":"2024-12-25T13:52:22.740884932+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2024-12-25T13:52:22.740905002+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_torchrun/wandb/run-20241225_135222-tvukb4nl/logs/debug-core.log"}
+{"time":"2024-12-25T13:52:23.055189346+08:00","level":"INFO","msg":"created new stream","id":"tvukb4nl"}
+{"time":"2024-12-25T13:52:23.055237806+08:00","level":"INFO","msg":"stream: started","id":"tvukb4nl"}
+{"time":"2024-12-25T13:52:23.055272996+08:00","level":"INFO","msg":"handler: started","stream_id":"tvukb4nl"}
+{"time":"2024-12-25T13:52:23.055273026+08:00","level":"INFO","msg":"sender: started","stream_id":"tvukb4nl"}
+{"time":"2024-12-25T13:52:23.056259838+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"tvukb4nl"}
+{"time":"2024-12-25T13:52:23.173749688+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2024-12-25T13:52:25.755701246+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2024-12-25T13:52:30.728161004+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2024-12-25T13:52:39.114513782+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2024-12-25T13:52:58.787319128+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": EOF"}
+{"time":"2024-12-25T13:53:27.031207222+08:00","level":"INFO","msg":"stream: closing","id":"tvukb4nl"}

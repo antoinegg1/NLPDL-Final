@@ -1,19 +1,19 @@
 # main.py
 '''
 torchrun --nproc_per_node=8 main.py \
-    --train_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/train \
-    --val_file /mnt/file2/changye/dataset/casual_formal_pair_ACL40k/val \
-    --output_dir /mnt/file2/changye/model/Qwen2.5-1.5B-Instruct-formal-finetuned \
+    --train_file /mnt/file2/changye/dataset/NLP/casual_formal_pair_ACL40k/train \
+    --val_file /mnt/file2/changye/dataset/NLP/casual_formal_pair_ACL40k/val \
+    --output_dir /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct-formal-finetuned \
     --logging_dir ./logs \
     --num_epochs 2 \
-    --train_batch_size 2 \
-    --eval_batch_size 2 \
+    --train_batch_size 1 \
+    --eval_batch_size 1 \
     --logging_steps 100 \
     --max_length 512 \
     --dataloader_num_workers 60 \
     --gradient_accumulation_steps 1 \
     --wandb_project qwen_academic_finetuning \
-    --model_name_or_path /mnt/file2/changye/model/Qwen2.5-1.5B-Instruct
+    --model_name_or_path /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct
 '''
 import argparse
 import os

@@ -1,0 +1,16 @@
+{"time":"2025-01-03T20:08:12.576923714+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-03T20:08:12.576961904+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250103_200812-60li3prf/logs/debug-core.log"}
+{"time":"2025-01-03T20:08:12.899562548+08:00","level":"INFO","msg":"created new stream","id":"60li3prf"}
+{"time":"2025-01-03T20:08:12.899603938+08:00","level":"INFO","msg":"stream: started","id":"60li3prf"}
+{"time":"2025-01-03T20:08:12.899706868+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"60li3prf"}
+{"time":"2025-01-03T20:08:12.899726558+08:00","level":"INFO","msg":"sender: started","stream_id":"60li3prf"}
+{"time":"2025-01-03T20:08:12.899830289+08:00","level":"INFO","msg":"handler: started","stream_id":"60li3prf"}
+{"time":"2025-01-03T20:08:13.557390829+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T20:08:21.607858608+08:00","level":"INFO","msg":"stream: closing","id":"60li3prf"}
+{"time":"2025-01-03T20:08:21.607920417+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-03T20:08:21.60927059+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-03T20:08:23.226727788+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-03T20:08:24.119085808+08:00","level":"INFO","msg":"handler: closed","stream_id":"60li3prf"}
+{"time":"2025-01-03T20:08:24.119132627+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"60li3prf"}
+{"time":"2025-01-03T20:08:24.119146477+08:00","level":"INFO","msg":"sender: closed","stream_id":"60li3prf"}
+{"time":"2025-01-03T20:08:24.119268085+08:00","level":"INFO","msg":"stream: closed","id":"60li3prf"}

@@ -1,0 +1,8 @@
+{"time":"2025-01-03T20:12:32.562965745+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-03T20:12:32.562980705+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250103_201232-nzads9im/logs/debug-core.log"}
+{"time":"2025-01-03T20:12:32.883933116+08:00","level":"INFO","msg":"created new stream","id":"nzads9im"}
+{"time":"2025-01-03T20:12:32.884033905+08:00","level":"INFO","msg":"stream: started","id":"nzads9im"}
+{"time":"2025-01-03T20:12:32.884097884+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"nzads9im"}
+{"time":"2025-01-03T20:12:32.884118594+08:00","level":"INFO","msg":"handler: started","stream_id":"nzads9im"}
+{"time":"2025-01-03T20:12:32.884149944+08:00","level":"INFO","msg":"sender: started","stream_id":"nzads9im"}
+{"time":"2025-01-03T20:12:33.899287401+08:00","level":"INFO","msg":"Starting system monitor"}

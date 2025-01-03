@@ -1,0 +1,8 @@
+{"time":"2025-01-03T20:12:32.606652024+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-03T20:12:32.606689224+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250103_201232-ifdtsvl2/logs/debug-core.log"}
+{"time":"2025-01-03T20:12:32.928501345+08:00","level":"INFO","msg":"created new stream","id":"ifdtsvl2"}
+{"time":"2025-01-03T20:12:32.928789672+08:00","level":"INFO","msg":"stream: started","id":"ifdtsvl2"}
+{"time":"2025-01-03T20:12:32.929933589+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ifdtsvl2"}
+{"time":"2025-01-03T20:12:32.930034898+08:00","level":"INFO","msg":"sender: started","stream_id":"ifdtsvl2"}
+{"time":"2025-01-03T20:12:32.929997718+08:00","level":"INFO","msg":"handler: started","stream_id":"ifdtsvl2"}
+{"time":"2025-01-03T20:12:33.935077692+08:00","level":"INFO","msg":"Starting system monitor"}
