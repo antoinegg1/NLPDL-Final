@@ -1,0 +1,8 @@
+{"time":"2025-01-04T01:30:29.858097815+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:30:29.858121365+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_013029-pbybkkvi/logs/debug-core.log"}
+{"time":"2025-01-04T01:30:30.076792688+08:00","level":"INFO","msg":"created new stream","id":"pbybkkvi"}
+{"time":"2025-01-04T01:30:30.076836697+08:00","level":"INFO","msg":"stream: started","id":"pbybkkvi"}
+{"time":"2025-01-04T01:30:30.076884987+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"pbybkkvi"}
+{"time":"2025-01-04T01:30:30.076884367+08:00","level":"INFO","msg":"sender: started","stream_id":"pbybkkvi"}
+{"time":"2025-01-04T01:30:30.076984306+08:00","level":"INFO","msg":"handler: started","stream_id":"pbybkkvi"}
+{"time":"2025-01-04T01:30:30.947180978+08:00","level":"INFO","msg":"Starting system monitor"}

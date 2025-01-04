@@ -6,3 +6,13 @@
 {"time":"2025-01-03T20:12:32.930034898+08:00","level":"INFO","msg":"sender: started","stream_id":"ifdtsvl2"}
 {"time":"2025-01-03T20:12:32.929997718+08:00","level":"INFO","msg":"handler: started","stream_id":"ifdtsvl2"}
 {"time":"2025-01-03T20:12:33.935077692+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T20:50:24.987308109+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/3528942762/qwen/ifdtsvl2/file_stream\": read tcp 127.0.0.1:34448->127.0.0.1:7895: read: connection reset by peer"}
+{"time":"2025-01-04T00:58:09.466351457+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T00:58:09.467492979+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T00:58:10.466900413+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.253161187}],"total_operations":1}}
+{"time":"2025-01-04T00:58:11.884243628+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T00:58:13.4708147+08:00","level":"INFO","msg":"stream: closing","id":"ifdtsvl2"}
+{"time":"2025-01-04T00:58:13.470873298+08:00","level":"INFO","msg":"handler: closed","stream_id":"ifdtsvl2"}
+{"time":"2025-01-04T00:58:13.470896348+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"ifdtsvl2"}
+{"time":"2025-01-04T00:58:13.470948687+08:00","level":"INFO","msg":"sender: closed","stream_id":"ifdtsvl2"}
+{"time":"2025-01-04T00:58:13.471004375+08:00","level":"INFO","msg":"stream: closed","id":"ifdtsvl2"}

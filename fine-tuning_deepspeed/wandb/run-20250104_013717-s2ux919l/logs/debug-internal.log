@@ -1,0 +1,16 @@
+{"time":"2025-01-04T01:37:17.506128381+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:37:17.506166966+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_013717-s2ux919l/logs/debug-core.log"}
+{"time":"2025-01-04T01:37:17.728150133+08:00","level":"INFO","msg":"created new stream","id":"s2ux919l"}
+{"time":"2025-01-04T01:37:17.72819521+08:00","level":"INFO","msg":"stream: started","id":"s2ux919l"}
+{"time":"2025-01-04T01:37:17.728275212+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"s2ux919l"}
+{"time":"2025-01-04T01:37:17.728351563+08:00","level":"INFO","msg":"handler: started","stream_id":"s2ux919l"}
+{"time":"2025-01-04T01:37:17.728275072+08:00","level":"INFO","msg":"sender: started","stream_id":"s2ux919l"}
+{"time":"2025-01-04T01:37:18.505195912+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T01:37:50.026910227+08:00","level":"INFO","msg":"stream: closing","id":"s2ux919l"}
+{"time":"2025-01-04T01:37:50.026999639+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T01:37:50.028107674+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T01:37:51.582272601+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T01:37:52.953331159+08:00","level":"INFO","msg":"handler: closed","stream_id":"s2ux919l"}
+{"time":"2025-01-04T01:37:52.953391137+08:00","level":"INFO","msg":"sender: closed","stream_id":"s2ux919l"}
+{"time":"2025-01-04T01:37:52.953358563+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"s2ux919l"}
+{"time":"2025-01-04T01:37:52.953550768+08:00","level":"INFO","msg":"stream: closed","id":"s2ux919l"}

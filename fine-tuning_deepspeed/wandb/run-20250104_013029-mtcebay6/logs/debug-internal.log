@@ -1,0 +1,8 @@
+{"time":"2025-01-04T01:30:29.990717471+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:30:29.99075522+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_013029-mtcebay6/logs/debug-core.log"}
+{"time":"2025-01-04T01:30:30.215923968+08:00","level":"INFO","msg":"created new stream","id":"mtcebay6"}
+{"time":"2025-01-04T01:30:30.216011257+08:00","level":"INFO","msg":"stream: started","id":"mtcebay6"}
+{"time":"2025-01-04T01:30:30.216059417+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"mtcebay6"}
+{"time":"2025-01-04T01:30:30.216072416+08:00","level":"INFO","msg":"handler: started","stream_id":"mtcebay6"}
+{"time":"2025-01-04T01:30:30.216112566+08:00","level":"INFO","msg":"sender: started","stream_id":"mtcebay6"}
+{"time":"2025-01-04T01:30:31.039158487+08:00","level":"INFO","msg":"Starting system monitor"}

@@ -6,3 +6,13 @@
 {"time":"2025-01-03T20:12:33.107722384+08:00","level":"INFO","msg":"handler: started","stream_id":"yfkmlpyz"}
 {"time":"2025-01-03T20:12:33.107661605+08:00","level":"INFO","msg":"sender: started","stream_id":"yfkmlpyz"}
 {"time":"2025-01-03T20:12:34.132458417+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-03T22:53:49.931756521+08:00","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-01-04T00:58:10.075440247+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T00:58:10.07656643+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T00:58:11.076117995+08:00","level":"INFO","msg":"handler: operation stats","stats":{"operations":[{"desc":"uploading wandb-summary.json","runtime_seconds":0.393690624},{"desc":"uploading config.yaml","runtime_seconds":0.064108058},{"desc":"uploading output.log","runtime_seconds":0.064090069}],"total_operations":3}}
+{"time":"2025-01-04T00:58:11.760774076+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T00:58:13.636389601+08:00","level":"INFO","msg":"stream: closing","id":"yfkmlpyz"}
+{"time":"2025-01-04T00:58:13.636460239+08:00","level":"INFO","msg":"handler: closed","stream_id":"yfkmlpyz"}
+{"time":"2025-01-04T00:58:13.636485259+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"yfkmlpyz"}
+{"time":"2025-01-04T00:58:13.636540378+08:00","level":"INFO","msg":"sender: closed","stream_id":"yfkmlpyz"}
+{"time":"2025-01-04T00:58:13.636618656+08:00","level":"INFO","msg":"stream: closed","id":"yfkmlpyz"}

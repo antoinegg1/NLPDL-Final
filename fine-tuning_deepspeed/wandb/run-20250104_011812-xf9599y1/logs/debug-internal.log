@@ -1,0 +1,8 @@
+{"time":"2025-01-04T01:18:12.364768955+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:18:12.364805234+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_011812-xf9599y1/logs/debug-core.log"}
+{"time":"2025-01-04T01:18:12.891124681+08:00","level":"INFO","msg":"created new stream","id":"xf9599y1"}
+{"time":"2025-01-04T01:18:12.89122581+08:00","level":"INFO","msg":"stream: started","id":"xf9599y1"}
+{"time":"2025-01-04T01:18:12.891301329+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"xf9599y1"}
+{"time":"2025-01-04T01:18:12.891389648+08:00","level":"INFO","msg":"handler: started","stream_id":"xf9599y1"}
+{"time":"2025-01-04T01:18:12.891430528+08:00","level":"INFO","msg":"sender: started","stream_id":"xf9599y1"}
+{"time":"2025-01-04T01:18:13.485821254+08:00","level":"INFO","msg":"Starting system monitor"}

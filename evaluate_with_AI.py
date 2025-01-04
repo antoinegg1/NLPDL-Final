@@ -124,10 +124,10 @@ def run_experiment(save_path, max_workers=10, chunk_size=10000,dataset_path="/mn
 
 def main():
     parser = argparse.ArgumentParser(description="Run GSM8K experiment with different settings.")
-    parser.add_argument("--save_path", type=str, default="/mnt/file2/changye/NLPFINAL/eval_result/gpt2-pretrained_on_sentence")
+    parser.add_argument("--save_path", type=str, default="/mnt/file2/changye/NLPFINAL/eval_result/Qwen2.5-1.5B-Instruct-finetune_sentence")
     parser.add_argument("--max_workers", type=int, default=60, help="并行工作的最大线程数")
     parser.add_argument("--chunk_size", type=int, default=10000, help="每个分段保存的样本数")
-    parser.add_argument("--dataset_path", type=str, default="/mnt/file2/changye/NLPFINAL/result/gpt2-pretrained_on_sentence.json", help="Path to the dataset to load using load_from_disk")
+    parser.add_argument("--dataset_path", type=str, default="/mnt/file2/changye/NLPFINAL/Generate_result/Qwen2.5-1.5B-Instruct-finetune_sentence.json", help="Path to the dataset to load using load_from_disk")
     parser.add_argument("--sample_size", type=int, default=300, help="样本数量")
     args = parser.parse_args()
 

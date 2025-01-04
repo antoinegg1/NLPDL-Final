@@ -6,6 +6,7 @@ import tqdm
 import numpy as np
 import logging
 import json
+import os
 # CUDA_VISIBLE_DEVICES=4,5,6,7
 logging.basicConfig(level=logging.WARNING)  # 只显示 WARNING 及以上级别的日志
 # SYSTEM_PROMPT = """You are a helpful assistant. Your task is to convert casual text into formal text without changing the original meaning or altering the order of sentences. Keep the tone formal and professional, using appropriate language while ensuring that the core ideas remain intact. Please take the following casual text and rewrite it in a more formal way:
@@ -17,9 +18,9 @@ SYSTEM_PROMPT ="""Convert casual text into formal text :
 def main():
     # 设置命令行参数解析器
     parser = argparse.ArgumentParser(description="Run formal test")
-    parser.add_argument("--data_set", type=str, default="/mnt/file2/changye/dataset/casual_formal_sentence_pair_ACL170k/test", help="Path to the local dataset to load using load_from_disk")
-    parser.add_argument("--save_path", type=str,default="/mnt/file2/changye/NLPFINAL/result/gpt2-pretrained_on_sentence.json", help="Path to save the inference results")
-    parser.add_argument("--model_path", type=str,default="/mnt/file2/changye/model/fine_tuned_gpt2", help="Path to save the inference results")
+    parser.add_argument("--data_set", type=str, default="/mnt/file2/changye/dataset/NLP/casual_formal_sentence_pair_ACL170k/test", help="Path to the local dataset to load using load_from_disk")
+    parser.add_argument("--save_path", type=str,default="/mnt/file2/changye/NLPFINAL/Generate_result/Qwen2.5-1.5B-Instruct-finetune_sentence.json", help="Path to save the inference results")
+    parser.add_argument("--model_path", type=str,default="/mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct-finetune", help="Path to save the inference results")
     args = parser.parse_args()
 
     dataset_path = args.data_set
@@ -31,7 +32,7 @@ def main():
     else :
         tokenizer = AutoTokenizer.from_pretrained(args.model_path)
         tokenizer.add_special_tokens({'pad_token': '[PAD]'})
-        llm = LLM(model=args.model_path, tensor_parallel_size=8)
+        llm = LLM(model=args.model_path, tensor_parallel_size=4)
     # 加载本地数据集
     local_dataset = load_from_disk(dataset_path)
 
@@ -80,13 +81,17 @@ def main():
                 "filename": batch_data['filename'][j]
             })
             
-        
+    
 
     # 将结果保存到json文件中,如果没有就创建一个
-    with open(save_path, "w") as f:
-        json.dump(results, f, ensure_ascii=False, indent=4)
-        print(f"Results saved to {save_path}")
-    
+    if os.path.exists(save_path):
+        with open(save_path, "w") as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+            print(f"Results saved to {save_path}")
+    else: 
+        with open(save_path, "x") as f:
+            json.dump(results, f, ensure_ascii=False, indent=4)
+            print(f"Results saved to {save_path}")
         
 
 

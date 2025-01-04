@@ -183,12 +183,12 @@ def load_model(model_type, model_name):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--model_type", type=str, choices=["t5", "gpt2", "auto"], default="gpt2",
+    parser.add_argument("--model_type", type=str, choices=["t5", "gpt2", "auto"], default="auto",
                         help="Type of model to load: t5, gpt2, or auto.")
-    parser.add_argument("--model_name", type=str, default="/mnt/file2/changye/model/gpt2-formal-finetuned_short_prompt/checkpoint-4000",
+    parser.add_argument("--model_name", type=str, default="/mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct",
                         help="Name or path of the model, e.g., 't5-small', 'gpt2', 'facebook/bart-base', etc.")
     parser.add_argument("--dataset_path", type=str,
-                        default="/mnt/file2/changye/dataset/casual_formal_sentence_pair_ACL170k/test",
+                        default="/mnt/file2/changye/dataset/NLP/casual_formal_sentence_pair_ACL170k/test",
                         help="Path to the test dataset.")
     parser.add_argument("--num_examples", type=int, default=100,
                         help="Number of test examples to evaluate (for demonstration).")

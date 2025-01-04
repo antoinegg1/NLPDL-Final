@@ -1,0 +1,8 @@
+{"time":"2025-01-04T01:03:54.651651023+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:03:54.651685673+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_010354-3ensyfmh/logs/debug-core.log"}
+{"time":"2025-01-04T01:03:54.97692253+08:00","level":"INFO","msg":"created new stream","id":"3ensyfmh"}
+{"time":"2025-01-04T01:03:54.976987599+08:00","level":"INFO","msg":"stream: started","id":"3ensyfmh"}
+{"time":"2025-01-04T01:03:54.977029308+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"3ensyfmh"}
+{"time":"2025-01-04T01:03:54.977098967+08:00","level":"INFO","msg":"sender: started","stream_id":"3ensyfmh"}
+{"time":"2025-01-04T01:03:54.977123486+08:00","level":"INFO","msg":"handler: started","stream_id":"3ensyfmh"}
+{"time":"2025-01-04T01:03:56.092357687+08:00","level":"INFO","msg":"Starting system monitor"}

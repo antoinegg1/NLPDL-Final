@@ -1,0 +1,12 @@
+{"time":"2025-01-04T01:37:17.001912248+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:37:17.001949114+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_013716-ndf0mogc/logs/debug-core.log"}
+{"time":"2025-01-04T01:37:17.327742783+08:00","level":"INFO","msg":"created new stream","id":"ndf0mogc"}
+{"time":"2025-01-04T01:37:17.327824755+08:00","level":"INFO","msg":"stream: started","id":"ndf0mogc"}
+{"time":"2025-01-04T01:37:17.327904437+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ndf0mogc"}
+{"time":"2025-01-04T01:37:17.327943953+08:00","level":"INFO","msg":"sender: started","stream_id":"ndf0mogc"}
+{"time":"2025-01-04T01:37:17.328034436+08:00","level":"INFO","msg":"handler: started","stream_id":"ndf0mogc"}
+{"time":"2025-01-04T01:37:18.159947699+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T01:37:50.020370389+08:00","level":"INFO","msg":"stream: closing","id":"ndf0mogc"}
+{"time":"2025-01-04T01:37:50.020463051+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T01:37:50.021769423+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T01:37:51.846058275+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}

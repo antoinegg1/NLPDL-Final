@@ -1,0 +1,16 @@
+{"time":"2025-01-04T01:24:51.265586022+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:24:51.265625142+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_012451-cgrvltxj/logs/debug-core.log"}
+{"time":"2025-01-04T01:24:51.489371635+08:00","level":"INFO","msg":"created new stream","id":"cgrvltxj"}
+{"time":"2025-01-04T01:24:51.489434624+08:00","level":"INFO","msg":"stream: started","id":"cgrvltxj"}
+{"time":"2025-01-04T01:24:51.489515413+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"cgrvltxj"}
+{"time":"2025-01-04T01:24:51.489587202+08:00","level":"INFO","msg":"handler: started","stream_id":"cgrvltxj"}
+{"time":"2025-01-04T01:24:51.489610052+08:00","level":"INFO","msg":"sender: started","stream_id":"cgrvltxj"}
+{"time":"2025-01-04T01:24:52.051087623+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T01:25:10.700475909+08:00","level":"INFO","msg":"stream: closing","id":"cgrvltxj"}
+{"time":"2025-01-04T01:25:10.700550678+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T01:25:10.701440418+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T01:25:11.714996454+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T01:25:12.393490973+08:00","level":"INFO","msg":"handler: closed","stream_id":"cgrvltxj"}
+{"time":"2025-01-04T01:25:12.393527092+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"cgrvltxj"}
+{"time":"2025-01-04T01:25:12.393538842+08:00","level":"INFO","msg":"sender: closed","stream_id":"cgrvltxj"}
+{"time":"2025-01-04T01:25:12.39369147+08:00","level":"INFO","msg":"stream: closed","id":"cgrvltxj"}

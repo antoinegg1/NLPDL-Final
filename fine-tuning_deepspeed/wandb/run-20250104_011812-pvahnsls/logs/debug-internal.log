@@ -1,0 +1,8 @@
+{"time":"2025-01-04T01:18:12.099073752+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:18:12.099086432+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_011812-pvahnsls/logs/debug-core.log"}
+{"time":"2025-01-04T01:18:12.318460368+08:00","level":"INFO","msg":"created new stream","id":"pvahnsls"}
+{"time":"2025-01-04T01:18:12.318512107+08:00","level":"INFO","msg":"stream: started","id":"pvahnsls"}
+{"time":"2025-01-04T01:18:12.318566606+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"pvahnsls"}
+{"time":"2025-01-04T01:18:12.318603266+08:00","level":"INFO","msg":"sender: started","stream_id":"pvahnsls"}
+{"time":"2025-01-04T01:18:12.318704945+08:00","level":"INFO","msg":"handler: started","stream_id":"pvahnsls"}
+{"time":"2025-01-04T01:18:13.272270566+08:00","level":"INFO","msg":"Starting system monitor"}

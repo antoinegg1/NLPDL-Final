@@ -1,0 +1,16 @@
+{"time":"2025-01-04T01:30:29.168832786+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:30:29.168872995+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_013029-jf2vc9tw/logs/debug-core.log"}
+{"time":"2025-01-04T01:30:29.495532176+08:00","level":"INFO","msg":"created new stream","id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:29.495645384+08:00","level":"INFO","msg":"stream: started","id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:29.496135239+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:29.496186668+08:00","level":"INFO","msg":"sender: started","stream_id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:29.496276617+08:00","level":"INFO","msg":"handler: started","stream_id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:30.289572327+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T01:30:47.404381166+08:00","level":"INFO","msg":"stream: closing","id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:47.404430676+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T01:30:47.405172887+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T01:30:49.001582693+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T01:30:49.895636022+08:00","level":"INFO","msg":"handler: closed","stream_id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:49.895691062+08:00","level":"INFO","msg":"sender: closed","stream_id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:49.895664442+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"jf2vc9tw"}
+{"time":"2025-01-04T01:30:49.89585944+08:00","level":"INFO","msg":"stream: closed","id":"jf2vc9tw"}

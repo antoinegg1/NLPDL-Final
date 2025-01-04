@@ -1,0 +1,11 @@
+{"time":"2025-01-04T01:24:52.311658145+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:24:52.311697194+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_012452-seg78d6u/logs/debug-core.log"}
+{"time":"2025-01-04T01:24:52.632984567+08:00","level":"INFO","msg":"created new stream","id":"seg78d6u"}
+{"time":"2025-01-04T01:24:52.633050006+08:00","level":"INFO","msg":"stream: started","id":"seg78d6u"}
+{"time":"2025-01-04T01:24:52.633127895+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"seg78d6u"}
+{"time":"2025-01-04T01:24:52.633153685+08:00","level":"INFO","msg":"handler: started","stream_id":"seg78d6u"}
+{"time":"2025-01-04T01:24:52.633257803+08:00","level":"INFO","msg":"sender: started","stream_id":"seg78d6u"}
+{"time":"2025-01-04T01:24:53.70405529+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T01:25:18.581357254+08:00","level":"INFO","msg":"stream: closing","id":"seg78d6u"}
+{"time":"2025-01-04T01:25:18.581443463+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T01:25:18.582500471+08:00","level":"INFO","msg":"Stopped system monitor"}

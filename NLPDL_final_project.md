@@ -124,9 +124,54 @@ BERTScore: {'Precision': 0.8521018028259277, 'Recall': 0.8656085133552551, 'F1':
 Diversity: {'Distinct-n': {1: 0.2679535076795351, 2: 0.562266500622665, 3: 0.7027812370278124, 4: 0.7424242424242424}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
 Length Normalization: {'Average Length Ratio': 1.6308074362596552}
 ========================================
-
-
-
+========== Evaluation Results ==========
+Model Type: auto
+Model Name: /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct-finetune/checkpoint-2000
+Data Path: /mnt/file2/changye/dataset/NLP/casual_formal_sentence_pair_ACL170k/test
+----------------------------------------
+BLEU Score: 0.1588
+ROUGE Scores: {'rouge-1': {'r': 0.4264435812070487, 'p': 0.2753976325161302, 'f': 0.32013358371939815}, 'rouge-2': {'r': 0.26101975549771805, 'p': 0.1700963846272772, 'f': 0.1952260227839123}, 'rouge-l': {'r': 0.4123957358694215, 'p': 0.2659854026358996, 'f': 0.3089675626398913}}
+Perplexity: 6.7583
+BERTScore: {'Precision': 0.8550587296485901, 'Recall': 0.8775673508644104, 'F1': 0.8659509420394897}
+Diversity: {'Distinct-n': {1: 0.3589848546868604, 2: 0.8063855914858781, 3: 0.9267294310274253, 4: 0.9287760949652067}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.7847899381941124}
+========================================
+========== Evaluation Results ==========
+Model Type: auto
+Model Name: /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct-finetune/checkpoint-2000
+Data Path: /mnt/file2/changye/dataset/NLP/casual_formal_pair_ACL40k/test
+----------------------------------------
+BLEU Score: 0.1061
+ROUGE Scores: {'rouge-1': {'r': 0.323586181617023, 'p': 0.3190045015712839, 'f': 0.2868051269922186}, 'rouge-2': {'r': 0.1912540161239054, 'p': 0.1736544556465611, 'f': 0.15265749853120514}, 'rouge-l': {'r': 0.3125053970019196, 'p': 0.30577102693616587, 'f': 0.27557582403429204}}
+Perplexity: 7.4155
+BERTScore: {'Precision': 0.8583482503890991, 'Recall': 0.8496290445327759, 'F1': 0.8534549474716187}
+Diversity: {'Distinct-n': {1: 0.35640495867768596, 2: 0.8020661157024793, 3: 0.9185950413223141, 4: 0.9262396694214876}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.1150491580156325}
+========================================
+========== Evaluation Results ==========
+Model Type: auto
+Model Name: /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct
+Data Path: /mnt/file2/changye/dataset/NLP/casual_formal_pair_ACL40k/test
+----------------------------------------
+BLEU Score: 0.1022
+ROUGE Scores: {'rouge-1': {'r': 0.3112848682316797, 'p': 0.3150193521231086, 'f': 0.27961981026371313}, 'rouge-2': {'r': 0.1843446394824244, 'p': 0.16971772660040177, 'f': 0.14867988708784302}, 'rouge-l': {'r': 0.30194884069617084, 'p': 0.3013733176135041, 'f': 0.2691745893306191}}
+Perplexity: 7.4654
+BERTScore: {'Precision': 0.8468213081359863, 'Recall': 0.8428120613098145, 'F1': 0.8443233966827393}
+Diversity: {'Distinct-n': {1: 0.401281786231135, 2: 0.8250982013644821, 3: 0.9216456481290056, 4: 0.9226793467025015}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.1097649374273808}
+========================================
+========== Evaluation Results ==========
+Model Type: auto
+Model Name: /mnt/file2/changye/model/NLP/Qwen2.5-1.5B-Instruct
+Data Path: /mnt/file2/changye/dataset/NLP/casual_formal_sentence_pair_ACL170k/test
+----------------------------------------
+BLEU Score: 0.1594
+ROUGE Scores: {'rouge-1': {'r': 0.421630482390337, 'p': 0.2773633525958341, 'f': 0.32002718230467453}, 'rouge-2': {'r': 0.26247361678976733, 'p': 0.1735307065411744, 'f': 0.19680727311444343}, 'rouge-l': {'r': 0.4041896053443159, 'p': 0.2644900463979086, 'f': 0.30545955873912184}}
+Perplexity: 7.9291
+BERTScore: {'Precision': 0.8441570997238159, 'Recall': 0.8710609674453735, 'F1': 0.8571165204048157}
+Diversity: {'Distinct-n': {1: 0.39652677279305354, 2: 0.8296464750878644, 3: 0.9295017572875749, 4: 0.9278478395699814}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
+Length Normalization: {'Average Length Ratio': 1.7652227173084476}
+========================================
 
 ### AI feedback
 
@@ -154,6 +199,7 @@ qwen-paragraph
 Style Transfer Strength:  0.6180602006688962
 Content Preservation:  0.7856187290969899
 Fluency:  0.7110367892976589
+
 
 mistral on sentence
 Style Transfer Strength:  0.7329999999999999

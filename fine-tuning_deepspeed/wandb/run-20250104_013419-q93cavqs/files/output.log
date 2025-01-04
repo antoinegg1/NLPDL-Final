@@ -1,0 +1,53 @@
+[2025-01-04 01:34:21,233] [INFO] [comm.py:652:init_distributed] cdb=None
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 142, in <module>
+[rank4]:     main()
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 60, in main
+[rank4]:     model, tokenizer, model_type = load_model_and_tokenizer(args.model_path, args.local_rank)
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/model.py", line 40, in load_model_and_tokenizer
+[rank4]:     model, model_type = _load_model(model_name)
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/model.py", line 76, in _load_model
+[rank4]:     model = AutoModelForCausalLM.from_pretrained(
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+[rank4]:     return model_class.from_pretrained(
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4130, in from_pretrained
+[rank4]:     model = cls(config, *model_args, **model_kwargs)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 511, in wrapper
+[rank4]:     f(module, *args, **kwargs)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 990, in __init__
+[rank4]:     self.model = MistralModel(config)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 511, in wrapper
+[rank4]:     f(module, *args, **kwargs)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 693, in __init__
+[rank4]:     self.embed_tokens = nn.Embedding(config.vocab_size, config.hidden_size, self.padding_idx)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 521, in wrapper
+[rank4]:     self._post_init_method(module)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 1087, in _post_init_method
+[rank4]:     param.data = param.data.to(self.local_device)
+[rank4]: NotImplementedError: Cannot copy out of meta tensor; no data!
+[rank4]: Traceback (most recent call last):
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 142, in <module>
+[rank4]:     main()
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py", line 60, in main
+[rank4]:     model, tokenizer, model_type = load_model_and_tokenizer(args.model_path, args.local_rank)
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/model.py", line 40, in load_model_and_tokenizer
+[rank4]:     model, model_type = _load_model(model_name)
+[rank4]:   File "/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/model.py", line 76, in _load_model
+[rank4]:     model = AutoModelForCausalLM.from_pretrained(
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 564, in from_pretrained
+[rank4]:     return model_class.from_pretrained(
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4130, in from_pretrained
+[rank4]:     model = cls(config, *model_args, **model_kwargs)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 511, in wrapper
+[rank4]:     f(module, *args, **kwargs)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 990, in __init__
+[rank4]:     self.model = MistralModel(config)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 511, in wrapper
+[rank4]:     f(module, *args, **kwargs)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/transformers/models/mistral/modeling_mistral.py", line 693, in __init__
+[rank4]:     self.embed_tokens = nn.Embedding(config.vocab_size, config.hidden_size, self.padding_idx)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 521, in wrapper
+[rank4]:     self._post_init_method(module)
+[rank4]:   File "/home/changye/miniconda3/envs/ML/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 1087, in _post_init_method
+[rank4]:     param.data = param.data.to(self.local_device)
+[rank4]: NotImplementedError: Cannot copy out of meta tensor; no data!

@@ -12,3 +12,4 @@ INFO:root:gcc -pthread -B /home/changye/miniconda3/envs/ML/compiler_compat /tmp/
 /mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/train.py:117: FutureWarning: `tokenizer` is deprecated and will be removed in version 5.0.0 for `Trainer.__init__`. Use `processing_class` instead.
   trainer = Trainer(
 INFO:__main__:Starting training with DeepSpeed & W&B logging...
+INFO:__main__:Training finished. Saving model and tokenizer.

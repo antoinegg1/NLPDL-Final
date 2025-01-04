@@ -1,12 +1,12 @@
 {
-    "train_batch_size": 32,
-    "gradient_accumulation_steps": 1,
-    "fp16": {
-      "enabled": true
-    },
-    "zero_optimization": {
-      "stage": 2
-    },
-    "steps_per_print": 200
+  "train_batch_size": 32,
+  "gradient_accumulation_steps": 1,
+  "fp16": {
+    "enabled": true
+  },
+  "zero_optimization": {
+    "stage": 3,
+    "stage3_prefetch_bucket_size": 2e8,
+    "stage3_param_persistence_threshold": 1e6
   }
-  
+}

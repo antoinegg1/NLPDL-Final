@@ -1,0 +1,2 @@
+[2025-01-04 01:26:50,942] [INFO] [comm.py:652:init_distributed] cdb=None
+Loading checkpoint shards:  33%|████████████████████████████                                                        | 1/3 [00:04<00:09,  4.59s/it]

@@ -1,0 +1,8 @@
+{"time":"2025-01-04T01:30:27.966031924+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:30:27.966058183+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_013027-ezmw74j4/logs/debug-core.log"}
+{"time":"2025-01-04T01:30:28.189173535+08:00","level":"INFO","msg":"created new stream","id":"ezmw74j4"}
+{"time":"2025-01-04T01:30:28.189240644+08:00","level":"INFO","msg":"stream: started","id":"ezmw74j4"}
+{"time":"2025-01-04T01:30:28.189274854+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ezmw74j4"}
+{"time":"2025-01-04T01:30:28.189332493+08:00","level":"INFO","msg":"handler: started","stream_id":"ezmw74j4"}
+{"time":"2025-01-04T01:30:28.189331633+08:00","level":"INFO","msg":"sender: started","stream_id":"ezmw74j4"}
+{"time":"2025-01-04T01:30:28.942001587+08:00","level":"INFO","msg":"Starting system monitor"}

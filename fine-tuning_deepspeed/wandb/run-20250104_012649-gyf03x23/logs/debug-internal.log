@@ -1,0 +1,16 @@
+{"time":"2025-01-04T01:26:49.704701678+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
+{"time":"2025-01-04T01:26:49.704743767+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_012649-gyf03x23/logs/debug-core.log"}
+{"time":"2025-01-04T01:26:50.027858736+08:00","level":"INFO","msg":"created new stream","id":"gyf03x23"}
+{"time":"2025-01-04T01:26:50.027891655+08:00","level":"INFO","msg":"stream: started","id":"gyf03x23"}
+{"time":"2025-01-04T01:26:50.029582766+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"gyf03x23"}
+{"time":"2025-01-04T01:26:50.029967841+08:00","level":"INFO","msg":"handler: started","stream_id":"gyf03x23"}
+{"time":"2025-01-04T01:26:50.030028401+08:00","level":"INFO","msg":"sender: started","stream_id":"gyf03x23"}
+{"time":"2025-01-04T01:26:50.679867247+08:00","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-01-04T01:27:07.792494692+08:00","level":"INFO","msg":"stream: closing","id":"gyf03x23"}
+{"time":"2025-01-04T01:27:07.7926222+08:00","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-01-04T01:27:07.793752187+08:00","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-01-04T01:27:09.492492416+08:00","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-01-04T01:27:10.058890447+08:00","level":"INFO","msg":"handler: closed","stream_id":"gyf03x23"}
+{"time":"2025-01-04T01:27:10.058932757+08:00","level":"INFO","msg":"sender: closed","stream_id":"gyf03x23"}
+{"time":"2025-01-04T01:27:10.058930447+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"gyf03x23"}
+{"time":"2025-01-04T01:27:10.059209323+08:00","level":"INFO","msg":"stream: closed","id":"gyf03x23"}
