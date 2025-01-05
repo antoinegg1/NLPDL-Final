@@ -173,18 +173,6 @@ Diversity: {'Distinct-n': {1: 0.39652677279305354, 2: 0.8296464750878644, 3: 0.9
 Length Normalization: {'Average Length Ratio': 1.7652227173084476}
 ========================================
 
-========== Evaluation Results ==========
-Model Type: auto
-Model Name: /mnt/file2/changye/model/NLP/qwen-formal-trained
-Data Path: /mnt/file2/changye/dataset/NLP/casual_formal_sentence_pair_ACL170k/test
-----------------------------------------
-BLEU Score: 0.1713
-ROUGE Scores: {'rouge-1': {'r': 0.294988097085446, 'p': 0.2638879053682442, 'f': 0.26860315040534144}, 'rouge-2': {'r': 0.2360321799733134, 'p': 0.23957480863002456, 'f': 0.22909496915199365}, 'rouge-l': {'r': 0.294988097085446, 'p': 0.2638879053682442, 'f': 0.26860315040534144}}
-Perplexity: 35916.4515
-BERTScore: {'Precision': 0.7190182209014893, 'Recall': 0.844806969165802, 'F1': 0.7765437364578247}
-Diversity: {'Distinct-n': {1: 0.8770728190338861, 2: 0.9498918529199711, 3: 0.9275414563806778, 4: 0.8918529199711608}, 'Repetition Rate': {1: 0.0, 2: 0.0, 3: 0.0, 4: 0.0}}
-Length Normalization: {'Average Length Ratio': 0.9976336169200475}
-========================================
 
 ### AI feedback
 
