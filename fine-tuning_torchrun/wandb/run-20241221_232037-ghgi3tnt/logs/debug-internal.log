@@ -1,8 +1,0 @@
-{"time":"2024-12-21T23:20:37.524105122+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2024-12-21T23:20:37.524136223+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_232037-ghgi3tnt/logs/debug-core.log"}
-{"time":"2024-12-21T23:20:38.047938915+08:00","level":"INFO","msg":"created new stream","id":"ghgi3tnt"}
-{"time":"2024-12-21T23:20:38.047963036+08:00","level":"INFO","msg":"stream: started","id":"ghgi3tnt"}
-{"time":"2024-12-21T23:20:38.048060747+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"ghgi3tnt"}
-{"time":"2024-12-21T23:20:38.048132197+08:00","level":"INFO","msg":"handler: started","stream_id":"ghgi3tnt"}
-{"time":"2024-12-21T23:20:38.048202328+08:00","level":"INFO","msg":"sender: started","stream_id":"ghgi3tnt"}
-{"time":"2024-12-21T23:20:39.017546954+08:00","level":"INFO","msg":"Starting system monitor"}

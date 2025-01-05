@@ -1,8 +1,0 @@
-{"time":"2025-01-04T01:18:12.262925675+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2025-01-04T01:18:12.262945925+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_011812-gd7ys30y/logs/debug-core.log"}
-{"time":"2025-01-04T01:18:12.583586257+08:00","level":"INFO","msg":"created new stream","id":"gd7ys30y"}
-{"time":"2025-01-04T01:18:12.583658316+08:00","level":"INFO","msg":"stream: started","id":"gd7ys30y"}
-{"time":"2025-01-04T01:18:12.583728535+08:00","level":"INFO","msg":"sender: started","stream_id":"gd7ys30y"}
-{"time":"2025-01-04T01:18:12.583735155+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"gd7ys30y"}
-{"time":"2025-01-04T01:18:12.583825074+08:00","level":"INFO","msg":"handler: started","stream_id":"gd7ys30y"}
-{"time":"2025-01-04T01:18:13.61135834+08:00","level":"INFO","msg":"Starting system monitor"}

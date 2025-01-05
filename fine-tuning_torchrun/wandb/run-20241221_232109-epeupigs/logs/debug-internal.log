@@ -1,9 +1,0 @@
-{"time":"2024-12-21T23:21:09.967998105+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2024-12-21T23:21:09.968027626+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_232109-epeupigs/logs/debug-core.log"}
-{"time":"2024-12-21T23:21:10.388290441+08:00","level":"INFO","msg":"created new stream","id":"epeupigs"}
-{"time":"2024-12-21T23:21:10.388327461+08:00","level":"INFO","msg":"stream: started","id":"epeupigs"}
-{"time":"2024-12-21T23:21:10.388426222+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"epeupigs"}
-{"time":"2024-12-21T23:21:10.388476413+08:00","level":"INFO","msg":"handler: started","stream_id":"epeupigs"}
-{"time":"2024-12-21T23:21:10.388504533+08:00","level":"INFO","msg":"sender: started","stream_id":"epeupigs"}
-{"time":"2024-12-21T23:21:10.392570029+08:00","level":"INFO","msg":"stream: closing","id":"epeupigs"}
-{"time":"2024-12-21T23:21:10.393460297+08:00","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}

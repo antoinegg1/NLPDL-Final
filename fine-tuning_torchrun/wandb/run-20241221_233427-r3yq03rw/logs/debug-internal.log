@@ -1,8 +1,0 @@
-{"time":"2024-12-21T23:34:27.933264159+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2024-12-21T23:34:27.933293209+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning/wandb/run-20241221_233427-r3yq03rw/logs/debug-core.log"}
-{"time":"2024-12-21T23:34:28.256320454+08:00","level":"INFO","msg":"created new stream","id":"r3yq03rw"}
-{"time":"2024-12-21T23:34:28.256379755+08:00","level":"INFO","msg":"stream: started","id":"r3yq03rw"}
-{"time":"2024-12-21T23:34:28.257057387+08:00","level":"INFO","msg":"handler: started","stream_id":"r3yq03rw"}
-{"time":"2024-12-21T23:34:28.257181038+08:00","level":"INFO","msg":"sender: started","stream_id":"r3yq03rw"}
-{"time":"2024-12-21T23:34:28.257310808+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"r3yq03rw"}
-{"time":"2024-12-21T23:34:29.230791142+08:00","level":"INFO","msg":"Starting system monitor"}

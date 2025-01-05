@@ -1,8 +1,0 @@
-{"time":"2025-01-04T01:26:49.437752629+08:00","level":"INFO","msg":"using version","core version":"0.19.0"}
-{"time":"2025-01-04T01:26:49.437789718+08:00","level":"INFO","msg":"created symlink","path":"/mnt/file2/changye/NLPFINAL/fine-tuning_deepspeed/wandb/run-20250104_012649-r28gsruz/logs/debug-core.log"}
-{"time":"2025-01-04T01:26:49.760279254+08:00","level":"INFO","msg":"created new stream","id":"r28gsruz"}
-{"time":"2025-01-04T01:26:49.760351113+08:00","level":"INFO","msg":"stream: started","id":"r28gsruz"}
-{"time":"2025-01-04T01:26:49.760386823+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"r28gsruz"}
-{"time":"2025-01-04T01:26:49.760390123+08:00","level":"INFO","msg":"sender: started","stream_id":"r28gsruz"}
-{"time":"2025-01-04T01:26:49.760493522+08:00","level":"INFO","msg":"handler: started","stream_id":"r28gsruz"}
-{"time":"2025-01-04T01:26:50.745381848+08:00","level":"INFO","msg":"Starting system monitor"}
