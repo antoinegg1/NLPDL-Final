@@ -1,12 +1,12 @@
-# Proposal for NLP Final Project: Text Style Transfer with LLMs
+# Report for NLP Final Project: Text Style Transfer with LLMs
 
 2200017853 李长烨
 
 ## Abstract
 
-我们从ACL文章构建了一个预训练数据集和一个偏好数据集，用于训练从非正式文本到ACL风格的正式文本的迁移，我们在T5模型和GPT2模型上进行了训练，并且我们构建了评测集，通过AI feedback评测风格迁移的质量，我们对训练好的T5模型，GPT2模型和通用的一个大模型mistral7b模型进行了评测
+我们从ACL文章构建了一个预训练数据集和一个偏好数据集，用于训练从非正式文本到ACL风格的正式文本的迁移，我们在T5模型, GPT2模型和上进行了训练，并且我们构建了评测集，通过AI feedback评测风格迁移的质量，我们对训练好的T5模型，GPT2模型和通用的一个大模型mistral7b模型进行了评测
 
-## Motivation
+## Introduction
 
 Academic writing can be challenging for students, often resulting in drafts that are rough or inconsistent in style. Automating the refinement of such writing through Text Style Transfer (TST) offers a practical solution to enhance clarity, coherence, and adherence to academic conventions.
 
@@ -22,10 +22,9 @@ Text Style Transfer (TST) has gained significant attention in recent years, part
 ## Methodology
 
 ### Dataset
-We will utilize publicly available datasets suitable for TST tasks, including:
+We will utilize publicly available dataset suitable for TST task, including:
 - **[WINGNUS/ACL-OCL](https://huggingface.co/datasets/WINGNUS/ACL-OCL)**: A dataset for pretraining in academic contexts.  
-- **[passeul/style-transfer-model-evaluation](https://github.com/passeul/style-transfer-model-evaluation)**: A collection for evaluating style transfer models.  
-- **NiGuLa/SGDD-TST**: A dataset designed for fine-tuning and testing TST models.  
+
 
 ### Approach
 1. **Fine-tuning**: Leverage pre-trained models such as T5-large and GPT-2-large, adapting them to the specific task of academic text style refinement.  

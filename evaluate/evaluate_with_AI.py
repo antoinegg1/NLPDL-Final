@@ -75,7 +75,7 @@ def save_chunk(results, save_path, chunk_index):
 def run_experiment(save_path, max_workers=10, chunk_size=10000,dataset_path="/mnt/file2/changye/NLPFINAL/result/mistral_formal_text_result.json", sample_size=1000):
 
     API_URL = "https://api.deepseek.com"
-    API_KEY = "sk-b152415699674f74a0046c553238e2f3"  
+    API_KEY = ""  
     if "json" in dataset_path:
         with open(dataset_path, "r") as f:
             dataset = json.load(f)
