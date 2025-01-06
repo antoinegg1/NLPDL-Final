@@ -40,27 +40,21 @@ def is_main_process():
     return dist.get_rank() == 0
 
 def main(args):
-    # 初始化分布式训练环境
     if 'WORLD_SIZE' in os.environ:
         dist.init_process_group(backend='nccl')
         torch.cuda.set_device(args.local_rank)
     else:
-        # For single process
         dist.init_process_group(backend='nccl', init_method='env://', world_size=1, rank=0)
-    # 设置随机种子以确保结果可复现
     set_seed(42)
-
-    # 检查设备
+    
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     if is_main_process():
         print(f"使用设备: {device}")
 
-    # 创建输出目录和日志目录（如果不存在）
     if is_main_process():
         os.makedirs(args.output_dir, exist_ok=True)
         os.makedirs(args.logging_dir, exist_ok=True)
 
-    # 初始化 wandb 仅在主进程
     if is_main_process():
         wandb.init(
             project=args.wandb_project,
@@ -68,18 +62,14 @@ def main(args):
             job_type="fine-tuning"
         )
 
-    # 加载数据集（使用 Hugging Face datasets 的 load_from_disk）
     train_dataset = load_from_disk(args.train_file)
     eval_dataset = load_from_disk(args.val_file)
     if is_main_process():
         print(f"训练集加载完成，共有 {len(train_dataset)} 个样本。")
         print(f"验证集加载完成，共有 {len(eval_dataset)} 个样本。")
 
-    # 加载模型和分词器
     model, tokenizer, model_type = load_model_and_tokenizer(args.model_name_or_path, args.local_rank)
 
-    
-    # 加载数据并进行预处理
     tokenized_train = prepare_dataset(
         train_dataset,
         tokenizer,
@@ -95,10 +85,8 @@ def main(args):
     if is_main_process():
         print("数据预处理完成。")
 
-    # 合并预处理后的数据集
     tokenized_dataset = {"train": tokenized_train, "validation": tokenized_eval}
 
-    # 初始化 Trainer
     trainer = initialize_trainer(
         model=model,
         tokenizer=tokenizer,
@@ -116,19 +104,15 @@ def main(args):
         model_type=model_type
     )
 
-    # 将 Trainer 配置为使用 wandb
     trainer.args.report_to = ['wandb']
 
-    # 开始训练
     trainer.train()
 
-    # 保存模型和分词器（仅主进程）
     if is_main_process():
         trainer.save_model(args.output_dir)
         tokenizer.save_pretrained(args.output_dir)
         print(f"模型和分词器已保存到 {args.output_dir}")
 
-    # 结束 wandb 运行（仅主进程）
     if is_main_process():
         wandb.finish()
 

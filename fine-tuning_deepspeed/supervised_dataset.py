@@ -1,7 +1,6 @@
 # supervised_dataset.py
 
 from datasets import Dataset, DatasetDict
-from transformers import GPT2Tokenizer, T5Tokenizer
 from typing import Dict
 
 def load_data(train_path: str, val_path: str) -> DatasetDict:
@@ -36,7 +35,7 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
         dict: 分词后的输入和标签。
     """
     if 'gpt2' in model_type.lower() or 'mistral' in model_type.lower() or 'qwen' in model_type.lower():
-        # GPT-2 特有的系统提示
+        # Long Prompt, abolished now
         # SYSTEM_PROMPT = """You are a helpful assistant. Your task is to convert casual text into formal text without changing the original meaning or altering the order of sentences. Keep the tone formal and professional, using appropriate language while ensuring that the core ideas remain intact. Please take the following casual text and rewrite it in a more formal way:
         # Casual: """
         SYSTEM_PROMPT="""Convert casual text into formal text :
@@ -44,7 +43,6 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
         inputs = [f"{SYSTEM_PROMPT}{casual} Formal:" for casual in examples['casual_text']]
         targets = examples['formal_text']
 
-        # 分词输入
         tokenized_inputs = tokenizer(
             inputs,
             max_length=max_length,
@@ -52,7 +50,6 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
             padding='max_length'
         )
 
-        # 分词目标文本
         tokenized_targets = tokenizer(
             targets,
             max_length=max_length,
@@ -62,19 +59,15 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
 
         labels = []
         for i in range(len(examples['casual_text'])):
-            # 构建输入文本和目标文本的完整 token 序列
             input_text = f"{SYSTEM_PROMPT}{examples['casual_text'][i]} Formal:"
             input_ids = tokenizer.encode(input_text, add_special_tokens=False)
 
             target_ids = tokenized_targets[i]
 
-            # 计算正式文本开始的位置
             prefix_length = len(input_ids)
 
-            # 创建标签：前缀部分为 -100，正式文本部分为实际 token IDs
             label = [-100] * prefix_length + target_ids
 
-            # 截断或填充标签到 max_length
             if len(label) < max_length:
                 label += [-100] * (max_length - len(label))
             else:
@@ -85,12 +78,10 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
         tokenized_inputs['labels'] = labels
 
     elif 't5' in model_type.lower():
-        # T5 特有的系统提示
         SYSTEM_PROMPT = """Convert casual text to formal text: """
         inputs = [f"{SYSTEM_PROMPT}{casual}" for casual in examples['casual_text']]
         targets = examples['formal_text']
 
-        # 分词输入和目标文本
         tokenized_inputs = tokenizer(
             inputs,
             max_length=max_length,
@@ -105,7 +96,6 @@ def preprocess_function(examples: Dict[str, list], tokenizer, max_length: int = 
             padding='max_length'
         )['input_ids']
 
-        # T5 的标签直接是目标 token IDs
         tokenized_inputs['labels'] = tokenized_targets
 
     else:

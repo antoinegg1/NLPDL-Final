@@ -17,7 +17,7 @@ from transformers import (
     AutoModelForSeq2SeqLM,
 )
 import tqdm
-# Download NLTK data for tokenization and BLEU if not already available
+
 nltk.download('punkt', quiet=True)
 nltk.download('punkt_tab')
 ############################
@@ -262,13 +262,6 @@ def main():
     print(f"Diversity: {diversity}")
     print(f"Length Normalization: {length_norm}")
     print("========================================")
-
-    # # Optionally print some sample generations for inspection
-    # print("\nSample Generations:")
-    # for i in range(num_samples):
-    #     print(f"\nCasual Text: {casual_texts[i]}")
-    #     print(f"Generated Text: {generated_texts[i]}")
-    #     print(f"Reference (Formal): {formal_texts[i]}")
 
 if __name__ == "__main__":
     main()
