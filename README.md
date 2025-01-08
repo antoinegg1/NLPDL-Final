@@ -1,6 +1,6 @@
 # NLPFINAL Project
 
-This repository contains the codebase for fine-tuning, pretraining, evaluating, and generating results for natural language processing (NLP) tasks. The structure is modular to support flexible experimentation and development.
+This repository is the final project repository of PKU NLPDL Course (24FALL), which contains the codebase for fine-tuning, pretraining, evaluating, and generating results for natural language processing (NLP) tasks. The structure is modular to support flexible experimentation and development. In addition, the trained models and datasets are uploaded in [Huggingface Repository](https://huggingface.co/datasets/Antoinegg1/NLPFINALHF).
 
 ## Repository Structure
 
